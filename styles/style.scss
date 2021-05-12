@@ -1,397 +1,524 @@
-$initial_delay: 5;
+$initial_delay: 10;
 $sky_height: 86vh;
 $duck_width: 5vw;
+$flight_height_ducks: 90;
+$time_between_ducks: 2;
+
+@mixin title_font {
+  font-size: 10vh;
+  line-height: 12vh;
+}
+
+@mixin title_font_400 {
+  font-size: 6vh;
+  line-height: 7vh;
+}
+
+@mixin title_font_250 {
+  font-size: 4vh;
+  line-height: 5vh;
+}
+
+@mixin count_font {
+  font-size: 9vh;
+  line-height: 10vh;
+}
+
+@mixin count_font_400 {
+  font-size: 5vh;
+  line-height: 6vh;
+}
+
+@mixin count_font_250 {
+  font-size: 3vh;
+  line-height: 4vh;
+}
 
 @keyframes letter_spacing_title {
   0% {
-    letter-spacing: 5vw;
-    color: #ffffff;
-    transform: translateX(0);
-  }
-  80% {
-    letter-spacing: normal;
-    color: #ffffff;
-    transform: translateX(0);
-  }
-  99% {
     letter-spacing: normal;
     color: transparent;
-    transform: translateX(0);
+    transform: scale(0);
+  }
+  0.1% {
+    letter-spacing: normal;
+    color: transparent;
+    transform: scale(1);
+  }
+  20% {
+    letter-spacing: normal;
+    color: #ffffff;
+    transform: scale(1);
+  }
+  99.9% {
+    letter-spacing: 10vw;
+    color: transparent;
+    transform: scale(20);
   }
   100% {
-    letter-spacing: normal;
+    letter-spacing: 10vw;
     color: transparent;
-    transform: translateX(-500vw);
+    transform: scale(0);
   }
 }
 
 @keyframes duck_fly-1 {
   0% {
     left: -$duck_width;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   25% {
     left: 25vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   50% {
     left: 50vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   75% {
     left: 75vw;
-    bottom: random(100) * 1%;
-  }
-  99.7% {
-    left: 100vw - $duck_width;
-    bottom: random(100) * 1%;
-  }
-  99.8% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-  }
-  99.9% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    bottom: random($flight_height_ducks) * 1%;
   }
   100% {
-    left: -$duck_width;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
   }
 }
 
 @keyframes duck_fly-2 {
   0% {
     left: -$duck_width;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   25% {
     left: 25vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   50% {
     left: 50vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   75% {
     left: 75vw;
-    bottom: random(100) * 1%;
-  }
-  99.7% {
-    left: 100vw - $duck_width;
-    bottom: random(100) * 1%;
-  }
-  99.8% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-  }
-  99.9% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    bottom: random($flight_height_ducks) * 1%;
   }
   100% {
-    left: -$duck_width;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
   }
 }
 
 @keyframes duck_fly-3 {
   0% {
     left: -$duck_width;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   25% {
     left: 25vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   50% {
     left: 50vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   75% {
     left: 75vw;
-    bottom: random(100) * 1%;
-  }
-  99.7% {
-    left: 100vw - $duck_width;
-    bottom: random(100) * 1%;
-  }
-  99.8% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-  }
-  99.9% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    bottom: random($flight_height_ducks) * 1%;
   }
   100% {
-    left: -$duck_width;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
   }
 }
 
 @keyframes duck_fly-4 {
   0% {
     left: -$duck_width;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   25% {
     left: 25vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   50% {
     left: 50vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   75% {
     left: 75vw;
-    bottom: random(100) * 1%;
-  }
-  99.7% {
-    left: 100vw - $duck_width;
-    bottom: random(100) * 1%;
-  }
-  99.8% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-  }
-  99.9% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    bottom: random($flight_height_ducks) * 1%;
   }
   100% {
-    left: -$duck_width;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
   }
 }
 
 @keyframes duck_fly-5 {
   0% {
     left: -$duck_width;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   25% {
     left: 25vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   50% {
     left: 50vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   75% {
     left: 75vw;
-    bottom: random(100) * 1%;
-  }
-  99.7% {
-    left: 100vw - $duck_width;
-    bottom: random(100) * 1%;
-  }
-  99.8% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-  }
-  99.9% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    bottom: random($flight_height_ducks) * 1%;
   }
   100% {
-    left: -$duck_width;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
   }
 }
 
 @keyframes duck_fly-6 {
   0% {
     left: -$duck_width;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   25% {
     left: 25vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   50% {
     left: 50vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   75% {
     left: 75vw;
-    bottom: random(100) * 1%;
-  }
-  99.7% {
-    left: 100vw - $duck_width;
-    bottom: random(100) * 1%;
-  }
-  99.8% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-  }
-  99.9% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    bottom: random($flight_height_ducks) * 1%;
   }
   100% {
-    left: -$duck_width;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
   }
 }
 
 @keyframes duck_fly-7 {
   0% {
     left: -$duck_width;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   25% {
     left: 25vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   50% {
     left: 50vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   75% {
     left: 75vw;
-    bottom: random(100) * 1%;
-  }
-  99.7% {
-    left: 100vw - $duck_width;
-    bottom: random(100) * 1%;
-  }
-  99.8% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-  }
-  99.9% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    bottom: random($flight_height_ducks) * 1%;
   }
   100% {
-    left: -$duck_width;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
   }
 }
 
 @keyframes duck_fly-8 {
   0% {
     left: -$duck_width;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   25% {
     left: 25vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   50% {
     left: 50vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   75% {
     left: 75vw;
-    bottom: random(100) * 1%;
-  }
-  99.7% {
-    left: 100vw - $duck_width;
-    bottom: random(100) * 1%;
-  }
-  99.8% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-  }
-  99.9% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    bottom: random($flight_height_ducks) * 1%;
   }
   100% {
-    left: -$duck_width;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
   }
 }
 
 @keyframes duck_fly-9 {
   0% {
     left: -$duck_width;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   25% {
     left: 25vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   50% {
     left: 50vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   75% {
     left: 75vw;
-    bottom: random(100) * 1%;
-  }
-  99.7% {
-    left: 100vw - $duck_width;
-    bottom: random(100) * 1%;
-  }
-  99.8% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-  }
-  99.9% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    bottom: random($flight_height_ducks) * 1%;
   }
   100% {
-    left: -$duck_width;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
   }
 }
 
 @keyframes duck_fly-10 {
   0% {
     left: -$duck_width;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   25% {
     left: 25vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   50% {
     left: 50vw;
-    bottom: random(100) * 1%;
+    bottom: random($flight_height_ducks) * 1%;
   }
   75% {
     left: 75vw;
-    bottom: random(100) * 1%;
-  }
-  99.7% {
-    left: 100vw - $duck_width;
-    bottom: random(100) * 1%;
-  }
-  99.8% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-  }
-  99.9% {
-    left: 100vw;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    bottom: random($flight_height_ducks) * 1%;
   }
   100% {
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+}
+
+@keyframes duck_fly-11 {
+  0% {
     left: -$duck_width;
-    bottom: random(100) * 1%;
-    visibility: hidden;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  25% {
+    left: 25vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  50% {
+    left: 50vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  75% {
+    left: 75vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  100% {
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+}
+
+@keyframes duck_fly-12 {
+  0% {
+    left: -$duck_width;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  25% {
+    left: 25vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  50% {
+    left: 50vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  75% {
+    left: 75vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  100% {
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+}
+
+@keyframes duck_fly-13 {
+  0% {
+    left: -$duck_width;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  25% {
+    left: 25vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  50% {
+    left: 50vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  75% {
+    left: 75vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  100% {
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+}
+
+@keyframes duck_fly-14 {
+  0% {
+    left: -$duck_width;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  25% {
+    left: 25vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  50% {
+    left: 50vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  75% {
+    left: 75vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  100% {
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+}
+
+@keyframes duck_fly-15 {
+  0% {
+    left: -$duck_width;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  25% {
+    left: 25vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  50% {
+    left: 50vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  75% {
+    left: 75vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  100% {
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+}
+
+@keyframes duck_fly-16 {
+  0% {
+    left: -$duck_width;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  25% {
+    left: 25vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  50% {
+    left: 50vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  75% {
+    left: 75vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  100% {
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+}
+
+@keyframes duck_fly-17 {
+  0% {
+    left: -$duck_width;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  25% {
+    left: 25vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  50% {
+    left: 50vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  75% {
+    left: 75vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  100% {
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+}
+
+@keyframes duck_fly-18 {
+  0% {
+    left: -$duck_width;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  25% {
+    left: 25vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  50% {
+    left: 50vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  75% {
+    left: 75vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  100% {
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+}
+
+@keyframes duck_fly-19 {
+  0% {
+    left: -$duck_width;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  25% {
+    left: 25vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  50% {
+    left: 50vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  75% {
+    left: 75vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  100% {
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+}
+
+@keyframes duck_fly-20 {
+  0% {
+    left: -$duck_width;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  25% {
+    left: 25vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  50% {
+    left: 50vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  75% {
+    left: 75vw;
+    bottom: random($flight_height_ducks) * 1%;
+  }
+  100% {
+    left: 100vw;
+    bottom: random($flight_height_ducks) * 1%;
   }
 }
 
@@ -419,16 +546,19 @@ div {
 .play_field__sky {
   width: 100%;
   height: $sky_height;
+  padding-top: 40vh;
   position: relative;
+  overflow: hidden;
 }
 
 .play_field__sky__title {
   text-align: center;
-  padding-top: 40vh;
-  font-size: 60px;
-  line-height: 66px;
+  white-space: nowrap;
+  @include title_font;
   color: #ffffff;
-  animation: letter_spacing_title 5s linear 1 0s forwards;
+  animation: letter_spacing_title ($initial_delay * 1s) ease-out 1 0s normal
+    forwards;
+  transform-origin: center center;
 }
 
 .play_field__sky__duck__checkbox[type="checkbox"] {
@@ -451,58 +581,131 @@ div {
 }
 
 .play_field__sky__duck__label-1 {
-  animation: duck_fly-1 ((1 + random($limit: 5)) * 1s) linear
+  animation: duck_fly-1 ((2 + random($limit: 4)) * 1s) linear
     (($initial_delay - 1 + random($limit: 15)) * 1s) 1 reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-2 {
-  animation: duck_fly-2 ((1 + random($limit: 5)) * 1s) linear
+  animation: duck_fly-2 ((2 + random($limit: 4)) * 1s) linear
     (($initial_delay + 0 + random($limit: 15)) * 1s) 1 reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-3 {
-  animation: duck_fly-3 ((1 + random($limit: 5)) * 1s) linear
-    (($initial_delay + 1 + random($limit: 15)) * 1s) 1 reverse both;
+  animation: duck_fly-3 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 1 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-4 {
-  animation: duck_fly-1 ((1 + random($limit: 5)) * 1s) linear
-    (($initial_delay + 2 + random($limit: 15)) * 1s) 1 reverse both;
+  animation: duck_fly-4 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 2 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-5 {
-  animation: duck_fly-1 ((1 + random($limit: 5)) * 1s) linear
-    (($initial_delay + 3 + random($limit: 15)) * 1s) 1 reverse both;
+  animation: duck_fly-5 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 3 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-6 {
-  animation: duck_fly-1 ((1 + random($limit: 5)) * 1s) linear
-    (($initial_delay + 4 + random($limit: 15)) * 1s) 1 normal both;
+  animation: duck_fly-6 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 4 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    normal both;
 }
 
 .play_field__sky__duck__label-7 {
-  animation: duck_fly-1 ((1 + random($limit: 5)) * 1s) linear
-    (($initial_delay + 5 + random($limit: 15)) * 1s) 1 normal both;
+  animation: duck_fly-7 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 5 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    normal both;
 }
 
 .play_field__sky__duck__label-8 {
-  animation: duck_fly-1 ((1 + random($limit: 5)) * 1s) linear
-    (($initial_delay + 6 + random($limit: 15)) * 1s) 1 normal both;
+  animation: duck_fly-8 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 6 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    normal both;
 }
 
 .play_field__sky__duck__label-9 {
-  animation: duck_fly-1 ((1 + random($limit: 5)) * 1s) linear
-    (($initial_delay + 7 + random($limit: 15)) * 1s) 1 normal both;
+  animation: duck_fly-9 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 7 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    normal both;
 }
 
 .play_field__sky__duck__label-10 {
-  animation: duck_fly-1 ((1 + random($limit: 5)) * 1s) linear
-    (($initial_delay + 8 + random($limit: 15)) * 1s) 1 normal both;
+  animation: duck_fly-10 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 8 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    normal both;
+}
+
+.play_field__sky__duck__label-11 {
+  animation: duck_fly-11 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 9 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    reverse both;
+  transform: rotateY(180deg);
+}
+
+.play_field__sky__duck__label-12 {
+  animation: duck_fly-12 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 10 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    reverse both;
+  transform: rotateY(180deg);
+}
+
+.play_field__sky__duck__label-13 {
+  animation: duck_fly-13 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 11 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    reverse both;
+  transform: rotateY(180deg);
+}
+
+.play_field__sky__duck__label-14 {
+  animation: duck_fly-14 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 12 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    reverse both;
+  transform: rotateY(180deg);
+}
+
+.play_field__sky__duck__label-15 {
+  animation: duck_fly-15 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 13 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    reverse both;
+  transform: rotateY(180deg);
+}
+
+.play_field__sky__duck__label-16 {
+  animation: duck_fly-16 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 14 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    normal both;
+}
+
+.play_field__sky__duck__label-17 {
+  animation: duck_fly-17 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 15 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    normal both;
+}
+
+.play_field__sky__duck__label-18 {
+  animation: duck_fly-18 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 16 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    normal both;
+}
+
+.play_field__sky__duck__label-19 {
+  animation: duck_fly-19 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 17 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    normal both;
+}
+
+.play_field__sky__duck__label-20 {
+  animation: duck_fly-20 ((2 + random($limit: 4)) * 1s) linear
+    (($initial_delay + 18 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    normal both;
 }
 
 .play_field__sky__duck__label__img {
@@ -521,20 +724,47 @@ div {
 .play_field__land {
   width: 100%;
   height: 100vh - $sky_height;
-  padding: 20px;
+  padding-top: 1vh;
 }
 
 .play_field__land__count {
   text-align: right;
-  font-size: 40px;
-  line-height: 44px;
+  @include count_font;
   color: #ffffff;
 }
 
 .play_field__land__count::after {
   content: counter(duck_count);
-  font-size: 40px;
-  line-height: 44px;
-  margin-left: 10px;
+  @include count_font;
+  margin-right: 2vw;
+  margin-left: 0.5vw;
   color: #ffffff;
+}
+
+@media (max-width: 400px) {
+  .play_field__sky__title {
+    @include title_font_400;
+  }
+
+  .play_field__land__count {
+    @include count_font_400;
+  }
+
+  .play_field__land__count::after {
+    @include count_font_400;
+  }
+}
+
+@media (max-width: 250px) {
+  .play_field__sky__title {
+    @include title_font_250;
+  }
+
+  .play_field__land__count {
+    @include count_font_250;
+  }
+
+  .play_field__land__count::after {
+    @include count_font_250;
+  }
 }
