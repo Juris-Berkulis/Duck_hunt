@@ -751,7 +751,7 @@ div {
 
 .play_field__land__button {
   color: blue;
-  background: cyan;
+  background: #00ffff47;
   @include button_font;
   padding: 1vh 2vw;
   margin-top: 2vh;
@@ -763,7 +763,7 @@ div {
 
 .play_field__land__button:hover {
   color: cyan;
-  background: blue;
+  background: #0000ff87;
 }
 
 .play_field__land__button:active {
