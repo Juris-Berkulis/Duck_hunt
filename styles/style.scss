@@ -3,35 +3,53 @@ $sky_height: 86vh;
 $duck_width: 5vw;
 $flight_height_ducks: 90;
 $time_between_ducks: 2;
+$land_text_margin: 2vw;
+$button_shift: 1vh;
+$total_ducks: "/20";
 
 @mixin title_font {
   font-size: 10vh;
   line-height: 12vh;
 }
 
-@mixin title_font_400 {
+@mixin title_font_600 {
   font-size: 6vh;
   line-height: 7vh;
 }
 
-@mixin title_font_250 {
+@mixin title_font_400 {
   font-size: 4vh;
   line-height: 5vh;
 }
 
-@mixin count_font {
-  font-size: 9vh;
-  line-height: 10vh;
+@mixin button_font($fs: 4vh, $lh: 5vh) {
+  font-size: $fs;
+  line-height: $lh;
 }
 
-@mixin count_font_400 {
-  font-size: 5vh;
-  line-height: 6vh;
+@mixin button_font_600($fs: 3vh, $lh: 4vh) {
+  font-size: $fs;
+  line-height: $lh;
 }
 
-@mixin count_font_250 {
-  font-size: 3vh;
-  line-height: 4vh;
+@mixin button_font_400($fs: 2vh, $lh: 3vh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin count_font($fs: 9vh, $lh: 10vh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin count_font_600($fs: 5vh, $lh: 6vh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin count_font_400($fs: 3vh, $lh: 4vh) {
+  font-size: $fs;
+  line-height: $lh;
 }
 
 @keyframes letter_spacing_title {
@@ -535,6 +553,7 @@ div {
 .play_field {
   width: 100%;
   height: 100vh;
+  background-color: #0099ff;
   background-image: url(../img/Play_field.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -725,6 +744,30 @@ div {
   width: 100%;
   height: 100vh - $sky_height;
   padding-top: 1vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.play_field__land__button {
+  color: blue;
+  background: #00ffff47;
+  @include button_font;
+  padding: 1vh 2vw;
+  margin-top: 2vh;
+  margin-left: $land_text_margin;
+  border: none;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+
+.play_field__land__button:hover {
+  color: cyan;
+  background: #0000ff87;
+}
+
+.play_field__land__button:active {
+  transform: translateY($button_shift);
 }
 
 .play_field__land__count {
@@ -734,11 +777,30 @@ div {
 }
 
 .play_field__land__count::after {
-  content: counter(duck_count);
+  content: counter(duck_count) $total_ducks;
   @include count_font;
-  margin-right: 2vw;
+  margin-right: $land_text_margin;
   margin-left: 0.5vw;
   color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .play_field__sky__title {
+    @include title_font_600;
+  }
+
+  .play_field__land__count {
+    @include count_font_600;
+  }
+
+  .play_field__land__count::after {
+    @include count_font_600;
+  }
+
+  .play_field__land__button {
+    margin-top: 1vh;
+    @include button_font_600;
+  }
 }
 
 @media (max-width: 400px) {
@@ -753,18 +815,28 @@ div {
   .play_field__land__count::after {
     @include count_font_400;
   }
+
+  .play_field__land__button {
+    margin-top: 0;
+    @include button_font_400;
+  }
 }
 
 @media (max-width: 250px) {
-  .play_field__sky__title {
-    @include title_font_250;
+  .play_field__land {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .play_field__land__button {
+    padding: 1vh 10vw;
   }
 
   .play_field__land__count {
-    @include count_font_250;
-  }
-
-  .play_field__land__count::after {
-    @include count_font_250;
+    line-height: 2vh;
+    text-align: center;
+    margin-left: $land_text_margin;
   }
 }
