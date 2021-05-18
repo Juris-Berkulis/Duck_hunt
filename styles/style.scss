@@ -42,6 +42,11 @@ $total_ducks: "/20";
   line-height: $lh;
 }
 
+@mixin count_font_750($fs: 7vh, $lh: 8vh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
 @mixin count_font_600($fs: 5vh, $lh: 6vh) {
   font-size: $fs;
   line-height: $lh;
@@ -50,6 +55,54 @@ $total_ducks: "/20";
 @mixin count_font_400($fs: 3vh, $lh: 4vh) {
   font-size: $fs;
   line-height: $lh;
+}
+
+@font-face {
+  font-family: "KoHo";
+  src: url("../fonts/KoHo/koho-bold-webfont.woff2") format("woff2"),
+    url("../fonts/KoHo/koho-bold-webfont.woff") format("woff"),
+    url("../fonts/KoHo/KoHo-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather/merriweather-light-webfont.woff2")
+      format("woff2"),
+    url("../fonts/Merriweather/merriweather-light-webfont.woff") format("woff"),
+    url("../fonts/Merriweather/Merriweather-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather/merriweather-regular-webfont.woff2")
+      format("woff2"),
+    url("../fonts/Merriweather/merriweather-regular-webfont.woff")
+      format("woff"),
+    url("../fonts/Merriweather/Merriweather-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/roboto-light-webfont.woff2") format("woff2"),
+    url("../fonts/Roboto/roboto-light-webfont.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/roboto-regular-webfont.woff2") format("woff2"),
+    url("../fonts/Roboto/roboto-regular-webfont.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @keyframes letter_spacing_title {
@@ -578,6 +631,8 @@ div {
   animation: letter_spacing_title ($initial_delay * 1s) ease-out 1 0s normal
     forwards;
   transform-origin: center center;
+  font-family: "KoHo", "Oswald", sans-serif;
+  font-weight: 500;
 }
 
 .play_field__sky__duck__checkbox[type="checkbox"] {
@@ -759,6 +814,8 @@ div {
   border: none;
   border-radius: 2vh;
   cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 
 .play_field__land__button:hover {
@@ -774,6 +831,8 @@ div {
   text-align: right;
   @include count_font;
   color: #ffffff;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 300;
 }
 
 .play_field__land__count::after {
@@ -782,6 +841,22 @@ div {
   margin-right: $land_text_margin;
   margin-left: 0.5vw;
   color: #ffffff;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 750px) {
+  .play_field__land__button {
+    margin-top: 1vh;
+  }
+
+  .play_field__land__count {
+    @include count_font_750;
+  }
+
+  .play_field__land__count::after {
+    @include count_font_750;
+  }
 }
 
 @media (max-width: 600px) {
@@ -789,36 +864,36 @@ div {
     @include title_font_600;
   }
 
-  .play_field__land__count {
-    @include count_font_600;
-  }
-
-  .play_field__land__count::after {
-    @include count_font_600;
-  }
-
   .play_field__land__button {
     margin-top: 1vh;
     @include button_font_600;
   }
-}
-
-@media (max-width: 400px) {
-  .play_field__sky__title {
-    @include title_font_400;
-  }
 
   .play_field__land__count {
-    @include count_font_400;
+    @include count_font_600;
   }
 
   .play_field__land__count::after {
-    @include count_font_400;
+    @include count_font_600;
+  }
+}
+
+@media (max-width: 430px) {
+  .play_field__sky__title {
+    @include title_font_400;
   }
 
   .play_field__land__button {
     margin-top: 0;
     @include button_font_400;
+  }
+
+  .play_field__land__count {
+    @include count_font_400;
+  }
+
+  .play_field__land__count::after {
+    @include count_font_400;
   }
 }
 
