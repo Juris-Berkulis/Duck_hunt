@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" type="image/icon" href="img/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Duck hunt</title>
@@ -136,6 +137,12 @@
         </div>
         <div class="play_field__land">
             <button class="play_field__land__button" onClick="window.location.reload()">Start over</button>
+            <!-- /**
+            * ! В некоторых браузерах звук в теге "audio" не воспроизводится автоматически из-за политики некоторых браузеров:
+            */ -->
+            <audio class="play_field__land__audio" autoplay loop>
+                <source src="audio/seraya-utka-golos-7.mp3" type="audio/mpeg" media="all">
+            </audio>
             <p class="play_field__land__count">Caught ducks:</p>
         </div>
     </section>
