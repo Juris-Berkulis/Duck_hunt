@@ -851,7 +851,7 @@ div {
   flex-wrap: wrap;
 }
 
-.play_field__land__button {
+.play_field__land__btn_box__button {
   color: blue;
   background: #00ffff47;
   @include button_font;
@@ -865,16 +865,16 @@ div {
   font-weight: 400;
 }
 
-.play_field__land__link {
+.play_field__land__btn_box__link {
   text-decoration: none;
 }
 
-.play_field__land__button:hover {
+.play_field__land__btn_box__button:hover {
   color: cyan;
   background: #0000ff87;
 }
 
-.play_field__land__button:active {
+.play_field__land__btn_box__button:active {
   transform: translateY($button_shift);
 }
 
@@ -897,7 +897,7 @@ div {
 }
 
 @media (max-width: 750px) {
-  .play_field__land__button {
+  .play_field__land__btn_box__button {
     margin-top: 1vh;
   }
 
@@ -915,7 +915,7 @@ div {
     @include title_font_600;
   }
 
-  .play_field__land__button {
+  .play_field__land__btn_box__button {
     margin-top: 1vh;
     @include button_font_600;
   }
@@ -934,7 +934,7 @@ div {
     @include title_font_400;
   }
 
-  .play_field__land__button {
+  .play_field__land__btn_box__button {
     margin-top: 0;
     @include button_font_400;
   }
@@ -956,7 +956,7 @@ div {
     justify-content: space-around;
   }
 
-  .play_field__land__button {
+  .play_field__land__btn_box__button {
     padding: 1vh 10vw;
   }
 
@@ -968,7 +968,7 @@ div {
 }
 
 @media (max-width: 150px) {
-  .play_field__land__button {
+  .play_field__land__btn_box__button {
     @include button_font_150;
   }
 
