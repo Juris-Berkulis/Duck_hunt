@@ -1,4 +1,15 @@
 $button_shift: 1vh;
+$animation_run_string_duration: 30s;
+$animation_run_string_delay: 1s;
+$animation_letter_snake_duration: 1s;
+$animation_letter_snake_delay: 0s;
+$letter_position_1: -10vh;
+$letter_position_2: -8vh;
+$letter_position_3: -5vh;
+$letter_position_4: 0vh;
+$letter_position_5: 5vh;
+$letter_position_6: 8vh;
+$letter_position_7: 10vh;
 
 @mixin ticker_font($fs: 9vh, $lh: 10vh) {
   font-size: $fs;
@@ -10,9 +21,54 @@ $button_shift: 1vh;
   line-height: $lh;
 }
 
+@mixin link_font_100($fs: 2vh, $lh: 2vh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
 @mixin main_title_font {
   font-size: 12vh;
   line-height: 10vh;
+}
+
+@mixin main_title_font_620 {
+  font-size: 5vh;
+  line-height: 6vh;
+}
+
+@mixin letter_run_1 {
+  top: $letter_position_1;
+  color: red;
+}
+
+@mixin letter_run_2 {
+  top: $letter_position_2;
+  color: orange;
+}
+
+@mixin letter_run_3 {
+  top: $letter_position_3;
+  color: yellow;
+}
+
+@mixin letter_run_4 {
+  top: $letter_position_4;
+  color: green;
+}
+
+@mixin letter_run_5 {
+  top: $letter_position_5;
+  color: cyan;
+}
+
+@mixin letter_run_6 {
+  top: $letter_position_6;
+  color: blue;
+}
+
+@mixin letter_run_7 {
+  top: $letter_position_7;
+  color: blueviolet;
 }
 
 @font-face {
@@ -63,6 +119,664 @@ $button_shift: 1vh;
   font-style: normal;
 }
 
+@keyframes run_string {
+  0% {
+    left: 100vw;
+  }
+
+  100% {
+    left: -500vw;
+  }
+}
+
+@keyframes letter_snake-1 {
+  0% {
+    @include letter_run_4;
+  }
+
+  8.3333333% {
+    @include letter_run_3;
+  }
+
+  16.666666% {
+    @include letter_run_2;
+  }
+
+  24.999999% {
+    @include letter_run_1;
+  }
+
+  33.333332% {
+    @include letter_run_2;
+  }
+
+  41.666665% {
+    @include letter_run_3;
+  }
+
+  50% {
+    @include letter_run_4;
+  }
+
+  58.333333% {
+    @include letter_run_5;
+  }
+
+  66.666666% {
+    @include letter_run_6;
+  }
+
+  74.999999% {
+    @include letter_run_7;
+  }
+
+  83.333332% {
+    @include letter_run_6;
+  }
+
+  91.666665% {
+    @include letter_run_5;
+  }
+
+  100% {
+    @include letter_run_4;
+  }
+}
+
+@keyframes letter_snake-2 {
+  0% {
+    @include letter_run_5;
+  }
+
+  8.3333333% {
+    @include letter_run_4;
+  }
+
+  16.666666% {
+    @include letter_run_3;
+  }
+
+  24.999999% {
+    @include letter_run_2;
+  }
+
+  33.333332% {
+    @include letter_run_1;
+  }
+
+  41.666665% {
+    @include letter_run_2;
+  }
+
+  50% {
+    @include letter_run_3;
+  }
+
+  58.333333% {
+    @include letter_run_4;
+  }
+
+  66.666666% {
+    @include letter_run_5;
+  }
+
+  74.999999% {
+    @include letter_run_6;
+  }
+
+  83.333332% {
+    @include letter_run_7;
+  }
+
+  91.666665% {
+    @include letter_run_6;
+  }
+
+  100% {
+    @include letter_run_5;
+  }
+}
+
+@keyframes letter_snake-3 {
+  0% {
+    @include letter_run_6;
+  }
+
+  8.3333333% {
+    @include letter_run_5;
+  }
+
+  16.666666% {
+    @include letter_run_4;
+  }
+
+  24.999999% {
+    @include letter_run_3;
+  }
+
+  33.333332% {
+    @include letter_run_2;
+  }
+
+  41.666665% {
+    @include letter_run_1;
+  }
+
+  50% {
+    @include letter_run_2;
+  }
+
+  58.333333% {
+    @include letter_run_3;
+  }
+
+  66.666666% {
+    @include letter_run_4;
+  }
+
+  74.999999% {
+    @include letter_run_5;
+  }
+
+  83.333332% {
+    @include letter_run_6;
+  }
+
+  91.666665% {
+    @include letter_run_7;
+  }
+
+  100% {
+    @include letter_run_6;
+  }
+}
+
+@keyframes letter_snake-4 {
+  0% {
+    @include letter_run_7;
+  }
+
+  8.3333333% {
+    @include letter_run_6;
+  }
+
+  16.666666% {
+    @include letter_run_5;
+  }
+
+  24.999999% {
+    @include letter_run_4;
+  }
+
+  33.333332% {
+    @include letter_run_3;
+  }
+
+  41.666665% {
+    @include letter_run_2;
+  }
+
+  50% {
+    @include letter_run_1;
+  }
+
+  58.333333% {
+    @include letter_run_2;
+  }
+
+  66.666666% {
+    @include letter_run_3;
+  }
+
+  74.999999% {
+    @include letter_run_4;
+  }
+
+  83.333332% {
+    @include letter_run_5;
+  }
+
+  91.666665% {
+    @include letter_run_6;
+  }
+
+  100% {
+    @include letter_run_7;
+  }
+}
+
+@keyframes letter_snake-5 {
+  0% {
+    @include letter_run_6;
+  }
+
+  8.3333333% {
+    @include letter_run_7;
+  }
+
+  16.666666% {
+    @include letter_run_6;
+  }
+
+  24.999999% {
+    @include letter_run_5;
+  }
+
+  33.333332% {
+    @include letter_run_4;
+  }
+
+  41.666665% {
+    @include letter_run_3;
+  }
+
+  50% {
+    @include letter_run_2;
+  }
+
+  58.333333% {
+    @include letter_run_1;
+  }
+
+  66.666666% {
+    @include letter_run_2;
+  }
+
+  74.999999% {
+    @include letter_run_3;
+  }
+
+  83.333332% {
+    @include letter_run_4;
+  }
+
+  91.666665% {
+    @include letter_run_5;
+  }
+
+  100% {
+    @include letter_run_6;
+  }
+}
+
+@keyframes letter_snake-6 {
+  0% {
+    @include letter_run_5;
+  }
+
+  8.3333333% {
+    @include letter_run_6;
+  }
+
+  16.666666% {
+    @include letter_run_7;
+  }
+
+  24.999999% {
+    @include letter_run_6;
+  }
+
+  33.333332% {
+    @include letter_run_5;
+  }
+
+  41.666665% {
+    @include letter_run_4;
+  }
+
+  50% {
+    @include letter_run_3;
+  }
+
+  58.333333% {
+    @include letter_run_2;
+  }
+
+  66.666666% {
+    @include letter_run_1;
+  }
+
+  74.999999% {
+    @include letter_run_2;
+  }
+
+  83.333332% {
+    @include letter_run_3;
+  }
+
+  91.666665% {
+    @include letter_run_4;
+  }
+
+  100% {
+    @include letter_run_5;
+  }
+}
+
+@keyframes letter_snake-7 {
+  0% {
+    @include letter_run_4;
+  }
+
+  8.3333333% {
+    @include letter_run_5;
+  }
+
+  16.666666% {
+    @include letter_run_6;
+  }
+
+  24.999999% {
+    @include letter_run_7;
+  }
+
+  33.333332% {
+    @include letter_run_6;
+  }
+
+  41.666665% {
+    @include letter_run_5;
+  }
+
+  50% {
+    @include letter_run_4;
+  }
+
+  58.333333% {
+    @include letter_run_3;
+  }
+
+  66.666666% {
+    @include letter_run_2;
+  }
+
+  74.999999% {
+    @include letter_run_1;
+  }
+
+  83.333332% {
+    @include letter_run_2;
+  }
+
+  91.666665% {
+    @include letter_run_3;
+  }
+
+  100% {
+    @include letter_run_4;
+  }
+}
+
+@keyframes letter_snake-8 {
+  0% {
+    @include letter_run_3;
+  }
+
+  8.3333333% {
+    @include letter_run_4;
+  }
+
+  16.666666% {
+    @include letter_run_5;
+  }
+
+  24.999999% {
+    @include letter_run_6;
+  }
+
+  33.333332% {
+    @include letter_run_7;
+  }
+
+  41.666665% {
+    @include letter_run_6;
+  }
+
+  50% {
+    @include letter_run_5;
+  }
+
+  58.333333% {
+    @include letter_run_4;
+  }
+
+  66.666666% {
+    @include letter_run_3;
+  }
+
+  74.999999% {
+    @include letter_run_2;
+  }
+
+  83.333332% {
+    @include letter_run_1;
+  }
+
+  91.666665% {
+    @include letter_run_2;
+  }
+
+  100% {
+    @include letter_run_3;
+  }
+}
+
+@keyframes letter_snake-9 {
+  0% {
+    @include letter_run_2;
+  }
+
+  8.3333333% {
+    @include letter_run_3;
+  }
+
+  16.666666% {
+    @include letter_run_4;
+  }
+
+  24.999999% {
+    @include letter_run_5;
+  }
+
+  33.333332% {
+    @include letter_run_6;
+  }
+
+  41.666665% {
+    @include letter_run_7;
+  }
+
+  50% {
+    @include letter_run_6;
+  }
+
+  58.333333% {
+    @include letter_run_5;
+  }
+
+  66.666666% {
+    @include letter_run_4;
+  }
+
+  74.999999% {
+    @include letter_run_3;
+  }
+
+  83.333332% {
+    @include letter_run_2;
+  }
+
+  91.666665% {
+    @include letter_run_1;
+  }
+
+  100% {
+    @include letter_run_2;
+  }
+}
+
+@keyframes letter_snake-10 {
+  0% {
+    @include letter_run_1;
+  }
+
+  8.3333333% {
+    @include letter_run_2;
+  }
+
+  16.666666% {
+    @include letter_run_3;
+  }
+
+  24.999999% {
+    @include letter_run_4;
+  }
+
+  33.333332% {
+    @include letter_run_5;
+  }
+
+  41.666665% {
+    @include letter_run_6;
+  }
+
+  50% {
+    @include letter_run_7;
+  }
+
+  58.333333% {
+    @include letter_run_6;
+  }
+
+  66.666666% {
+    @include letter_run_5;
+  }
+
+  74.999999% {
+    @include letter_run_4;
+  }
+
+  83.333332% {
+    @include letter_run_3;
+  }
+
+  91.666665% {
+    @include letter_run_2;
+  }
+
+  100% {
+    @include letter_run_1;
+  }
+}
+
+@keyframes letter_snake-11 {
+  0% {
+    @include letter_run_2;
+  }
+
+  8.3333333% {
+    @include letter_run_1;
+  }
+
+  16.666666% {
+    @include letter_run_2;
+  }
+
+  24.999999% {
+    @include letter_run_3;
+  }
+
+  33.333332% {
+    @include letter_run_4;
+  }
+
+  41.666665% {
+    @include letter_run_5;
+  }
+
+  50% {
+    @include letter_run_6;
+  }
+
+  58.333333% {
+    @include letter_run_7;
+  }
+
+  66.666666% {
+    @include letter_run_6;
+  }
+
+  74.999999% {
+    @include letter_run_5;
+  }
+
+  83.333332% {
+    @include letter_run_4;
+  }
+
+  91.666665% {
+    @include letter_run_3;
+  }
+
+  100% {
+    @include letter_run_2;
+  }
+}
+
+@keyframes letter_snake-12 {
+  0% {
+    @include letter_run_3;
+  }
+
+  8.3333333% {
+    @include letter_run_2;
+  }
+
+  16.666666% {
+    @include letter_run_1;
+  }
+
+  24.999999% {
+    @include letter_run_2;
+  }
+
+  33.333332% {
+    @include letter_run_3;
+  }
+
+  41.666665% {
+    @include letter_run_4;
+  }
+
+  50% {
+    @include letter_run_5;
+  }
+
+  58.333333% {
+    @include letter_run_6;
+  }
+
+  66.666666% {
+    @include letter_run_7;
+  }
+
+  74.999999% {
+    @include letter_run_6;
+  }
+
+  83.333332% {
+    @include letter_run_5;
+  }
+
+  91.666665% {
+    @include letter_run_4;
+  }
+
+  100% {
+    @include letter_run_3;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -95,11 +809,99 @@ div {
   font-family: "Merriweather", sans-serif;
   font-weight: 300;
   white-space: nowrap;
+  position: fixed;
+  top: 10vh;
+  left: 100vw;
+  animation: run_string $animation_run_string_duration linear
+    $animation_run_string_delay infinite normal;
+}
+
+.play_field__ticker__text__letter-01,
+.play_field__ticker__text__letter-02,
+.play_field__ticker__text__letter-03,
+.play_field__ticker__text__letter-04,
+.play_field__ticker__text__letter-05,
+.play_field__ticker__text__letter-06,
+.play_field__ticker__text__letter-07,
+.play_field__ticker__text__letter-08,
+.play_field__ticker__text__letter-09,
+.play_field__ticker__text__letter-10,
+.play_field__ticker__text__letter-11,
+.play_field__ticker__text__letter-12 {
+  position: relative;
+  top: 0;
+}
+
+.play_field__ticker__text__letter-01 {
+  top: $letter_position_4;
+  animation: letter_snake-1 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
+}
+
+.play_field__ticker__text__letter-02 {
+  top: $letter_position_5;
+  animation: letter_snake-2 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
+}
+
+.play_field__ticker__text__letter-03 {
+  top: $letter_position_6;
+  animation: letter_snake-3 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
+}
+
+.play_field__ticker__text__letter-04 {
+  top: $letter_position_7;
+  animation: letter_snake-4 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
+}
+
+.play_field__ticker__text__letter-05 {
+  top: $letter_position_6;
+  animation: letter_snake-5 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
+}
+
+.play_field__ticker__text__letter-06 {
+  top: $letter_position_5;
+  animation: letter_snake-6 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
+}
+
+.play_field__ticker__text__letter-07 {
+  top: $letter_position_4;
+  animation: letter_snake-7 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
+}
+
+.play_field__ticker__text__letter-08 {
+  top: $letter_position_3;
+  animation: letter_snake-8 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
+}
+.play_field__ticker__text__letter-09 {
+  top: $letter_position_2;
+  animation: letter_snake-9 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
+}
+.play_field__ticker__text__letter-10 {
+  top: $letter_position_1;
+  animation: letter_snake-10 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
+}
+.play_field__ticker__text__letter-11 {
+  top: $letter_position_2;
+  animation: letter_snake-11 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
+}
+.play_field__ticker__text__letter-12 {
+  top: $letter_position_3;
+  animation: letter_snake-12 $animation_letter_snake_duration linear
+    $animation_letter_snake_delay infinite;
 }
 
 .play_field__main {
-  margin-top: 10vh;
-  margin-left: 10vw;
+  margin: 10vh 10vw 0;
   display: flex;
   justify-content: space-between;
 }
@@ -125,6 +927,10 @@ div {
   text-align: center;
 }
 
+.play_field__main__sticker__title_mobile {
+  display: none;
+}
+
 .play_field__main__menu__level:hover {
   color: cyan;
   background: #0000ff87;
@@ -142,15 +948,75 @@ div {
   width: 46vw;
   height: 70vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
+  padding-right: 13vw;
 }
 
+.play_field__main__sticker__title_mobile,
 .play_field__main__sticker__title {
   text-align: center;
-  white-space: nowrap;
   @include main_title_font;
   color: yellow;
   font-family: "KoHo", "Oswald", sans-serif;
   font-weight: 500;
+}
+
+@media (max-width: 620px) {
+  .play_field__main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+  }
+
+  .play_field__main__menu {
+    background-image: url(../img/favicon_duck_hunt_new.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .play_field__main__sticker__title_mobile {
+    display: block;
+    text-align: center;
+    @include main_title_font_620;
+  }
+
+  .play_field__main__menu__level {
+    width: 20vw;
+  }
+
+  .play_field__main__sticker {
+    background-image: none;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .play_field__main__sticker__title {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .play_field__main__menu__level {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 100px) {
+  .play_field__main__menu__level {
+    height: 4vh;
+    @include link_font_100;
+    box-sizing: border-box;
+  }
 }

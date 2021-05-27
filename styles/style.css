@@ -33,6 +33,1344 @@
   font-style: normal;
 }
 
+@-webkit-keyframes run_string {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -500vw;
+  }
+}
+
+@keyframes run_string {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -500vw;
+  }
+}
+
+@-webkit-keyframes letter_snake-1 {
+  0% {
+    top: 0vh;
+    color: green;
+  }
+  8.3333333% {
+    top: -5vh;
+    color: yellow;
+  }
+  16.666666% {
+    top: -8vh;
+    color: orange;
+  }
+  24.999999% {
+    top: -10vh;
+    color: red;
+  }
+  33.333332% {
+    top: -8vh;
+    color: orange;
+  }
+  41.666665% {
+    top: -5vh;
+    color: yellow;
+  }
+  50% {
+    top: 0vh;
+    color: green;
+  }
+  58.333333% {
+    top: 5vh;
+    color: cyan;
+  }
+  66.666666% {
+    top: 8vh;
+    color: blue;
+  }
+  74.999999% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  83.333332% {
+    top: 8vh;
+    color: blue;
+  }
+  91.666665% {
+    top: 5vh;
+    color: cyan;
+  }
+  100% {
+    top: 0vh;
+    color: green;
+  }
+}
+
+@keyframes letter_snake-1 {
+  0% {
+    top: 0vh;
+    color: green;
+  }
+  8.3333333% {
+    top: -5vh;
+    color: yellow;
+  }
+  16.666666% {
+    top: -8vh;
+    color: orange;
+  }
+  24.999999% {
+    top: -10vh;
+    color: red;
+  }
+  33.333332% {
+    top: -8vh;
+    color: orange;
+  }
+  41.666665% {
+    top: -5vh;
+    color: yellow;
+  }
+  50% {
+    top: 0vh;
+    color: green;
+  }
+  58.333333% {
+    top: 5vh;
+    color: cyan;
+  }
+  66.666666% {
+    top: 8vh;
+    color: blue;
+  }
+  74.999999% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  83.333332% {
+    top: 8vh;
+    color: blue;
+  }
+  91.666665% {
+    top: 5vh;
+    color: cyan;
+  }
+  100% {
+    top: 0vh;
+    color: green;
+  }
+}
+
+@-webkit-keyframes letter_snake-2 {
+  0% {
+    top: 5vh;
+    color: cyan;
+  }
+  8.3333333% {
+    top: 0vh;
+    color: green;
+  }
+  16.666666% {
+    top: -5vh;
+    color: yellow;
+  }
+  24.999999% {
+    top: -8vh;
+    color: orange;
+  }
+  33.333332% {
+    top: -10vh;
+    color: red;
+  }
+  41.666665% {
+    top: -8vh;
+    color: orange;
+  }
+  50% {
+    top: -5vh;
+    color: yellow;
+  }
+  58.333333% {
+    top: 0vh;
+    color: green;
+  }
+  66.666666% {
+    top: 5vh;
+    color: cyan;
+  }
+  74.999999% {
+    top: 8vh;
+    color: blue;
+  }
+  83.333332% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  91.666665% {
+    top: 8vh;
+    color: blue;
+  }
+  100% {
+    top: 5vh;
+    color: cyan;
+  }
+}
+
+@keyframes letter_snake-2 {
+  0% {
+    top: 5vh;
+    color: cyan;
+  }
+  8.3333333% {
+    top: 0vh;
+    color: green;
+  }
+  16.666666% {
+    top: -5vh;
+    color: yellow;
+  }
+  24.999999% {
+    top: -8vh;
+    color: orange;
+  }
+  33.333332% {
+    top: -10vh;
+    color: red;
+  }
+  41.666665% {
+    top: -8vh;
+    color: orange;
+  }
+  50% {
+    top: -5vh;
+    color: yellow;
+  }
+  58.333333% {
+    top: 0vh;
+    color: green;
+  }
+  66.666666% {
+    top: 5vh;
+    color: cyan;
+  }
+  74.999999% {
+    top: 8vh;
+    color: blue;
+  }
+  83.333332% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  91.666665% {
+    top: 8vh;
+    color: blue;
+  }
+  100% {
+    top: 5vh;
+    color: cyan;
+  }
+}
+
+@-webkit-keyframes letter_snake-3 {
+  0% {
+    top: 8vh;
+    color: blue;
+  }
+  8.3333333% {
+    top: 5vh;
+    color: cyan;
+  }
+  16.666666% {
+    top: 0vh;
+    color: green;
+  }
+  24.999999% {
+    top: -5vh;
+    color: yellow;
+  }
+  33.333332% {
+    top: -8vh;
+    color: orange;
+  }
+  41.666665% {
+    top: -10vh;
+    color: red;
+  }
+  50% {
+    top: -8vh;
+    color: orange;
+  }
+  58.333333% {
+    top: -5vh;
+    color: yellow;
+  }
+  66.666666% {
+    top: 0vh;
+    color: green;
+  }
+  74.999999% {
+    top: 5vh;
+    color: cyan;
+  }
+  83.333332% {
+    top: 8vh;
+    color: blue;
+  }
+  91.666665% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  100% {
+    top: 8vh;
+    color: blue;
+  }
+}
+
+@keyframes letter_snake-3 {
+  0% {
+    top: 8vh;
+    color: blue;
+  }
+  8.3333333% {
+    top: 5vh;
+    color: cyan;
+  }
+  16.666666% {
+    top: 0vh;
+    color: green;
+  }
+  24.999999% {
+    top: -5vh;
+    color: yellow;
+  }
+  33.333332% {
+    top: -8vh;
+    color: orange;
+  }
+  41.666665% {
+    top: -10vh;
+    color: red;
+  }
+  50% {
+    top: -8vh;
+    color: orange;
+  }
+  58.333333% {
+    top: -5vh;
+    color: yellow;
+  }
+  66.666666% {
+    top: 0vh;
+    color: green;
+  }
+  74.999999% {
+    top: 5vh;
+    color: cyan;
+  }
+  83.333332% {
+    top: 8vh;
+    color: blue;
+  }
+  91.666665% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  100% {
+    top: 8vh;
+    color: blue;
+  }
+}
+
+@-webkit-keyframes letter_snake-4 {
+  0% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  8.3333333% {
+    top: 8vh;
+    color: blue;
+  }
+  16.666666% {
+    top: 5vh;
+    color: cyan;
+  }
+  24.999999% {
+    top: 0vh;
+    color: green;
+  }
+  33.333332% {
+    top: -5vh;
+    color: yellow;
+  }
+  41.666665% {
+    top: -8vh;
+    color: orange;
+  }
+  50% {
+    top: -10vh;
+    color: red;
+  }
+  58.333333% {
+    top: -8vh;
+    color: orange;
+  }
+  66.666666% {
+    top: -5vh;
+    color: yellow;
+  }
+  74.999999% {
+    top: 0vh;
+    color: green;
+  }
+  83.333332% {
+    top: 5vh;
+    color: cyan;
+  }
+  91.666665% {
+    top: 8vh;
+    color: blue;
+  }
+  100% {
+    top: 10vh;
+    color: blueviolet;
+  }
+}
+
+@keyframes letter_snake-4 {
+  0% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  8.3333333% {
+    top: 8vh;
+    color: blue;
+  }
+  16.666666% {
+    top: 5vh;
+    color: cyan;
+  }
+  24.999999% {
+    top: 0vh;
+    color: green;
+  }
+  33.333332% {
+    top: -5vh;
+    color: yellow;
+  }
+  41.666665% {
+    top: -8vh;
+    color: orange;
+  }
+  50% {
+    top: -10vh;
+    color: red;
+  }
+  58.333333% {
+    top: -8vh;
+    color: orange;
+  }
+  66.666666% {
+    top: -5vh;
+    color: yellow;
+  }
+  74.999999% {
+    top: 0vh;
+    color: green;
+  }
+  83.333332% {
+    top: 5vh;
+    color: cyan;
+  }
+  91.666665% {
+    top: 8vh;
+    color: blue;
+  }
+  100% {
+    top: 10vh;
+    color: blueviolet;
+  }
+}
+
+@-webkit-keyframes letter_snake-5 {
+  0% {
+    top: 8vh;
+    color: blue;
+  }
+  8.3333333% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  16.666666% {
+    top: 8vh;
+    color: blue;
+  }
+  24.999999% {
+    top: 5vh;
+    color: cyan;
+  }
+  33.333332% {
+    top: 0vh;
+    color: green;
+  }
+  41.666665% {
+    top: -5vh;
+    color: yellow;
+  }
+  50% {
+    top: -8vh;
+    color: orange;
+  }
+  58.333333% {
+    top: -10vh;
+    color: red;
+  }
+  66.666666% {
+    top: -8vh;
+    color: orange;
+  }
+  74.999999% {
+    top: -5vh;
+    color: yellow;
+  }
+  83.333332% {
+    top: 0vh;
+    color: green;
+  }
+  91.666665% {
+    top: 5vh;
+    color: cyan;
+  }
+  100% {
+    top: 8vh;
+    color: blue;
+  }
+}
+
+@keyframes letter_snake-5 {
+  0% {
+    top: 8vh;
+    color: blue;
+  }
+  8.3333333% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  16.666666% {
+    top: 8vh;
+    color: blue;
+  }
+  24.999999% {
+    top: 5vh;
+    color: cyan;
+  }
+  33.333332% {
+    top: 0vh;
+    color: green;
+  }
+  41.666665% {
+    top: -5vh;
+    color: yellow;
+  }
+  50% {
+    top: -8vh;
+    color: orange;
+  }
+  58.333333% {
+    top: -10vh;
+    color: red;
+  }
+  66.666666% {
+    top: -8vh;
+    color: orange;
+  }
+  74.999999% {
+    top: -5vh;
+    color: yellow;
+  }
+  83.333332% {
+    top: 0vh;
+    color: green;
+  }
+  91.666665% {
+    top: 5vh;
+    color: cyan;
+  }
+  100% {
+    top: 8vh;
+    color: blue;
+  }
+}
+
+@-webkit-keyframes letter_snake-6 {
+  0% {
+    top: 5vh;
+    color: cyan;
+  }
+  8.3333333% {
+    top: 8vh;
+    color: blue;
+  }
+  16.666666% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  24.999999% {
+    top: 8vh;
+    color: blue;
+  }
+  33.333332% {
+    top: 5vh;
+    color: cyan;
+  }
+  41.666665% {
+    top: 0vh;
+    color: green;
+  }
+  50% {
+    top: -5vh;
+    color: yellow;
+  }
+  58.333333% {
+    top: -8vh;
+    color: orange;
+  }
+  66.666666% {
+    top: -10vh;
+    color: red;
+  }
+  74.999999% {
+    top: -8vh;
+    color: orange;
+  }
+  83.333332% {
+    top: -5vh;
+    color: yellow;
+  }
+  91.666665% {
+    top: 0vh;
+    color: green;
+  }
+  100% {
+    top: 5vh;
+    color: cyan;
+  }
+}
+
+@keyframes letter_snake-6 {
+  0% {
+    top: 5vh;
+    color: cyan;
+  }
+  8.3333333% {
+    top: 8vh;
+    color: blue;
+  }
+  16.666666% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  24.999999% {
+    top: 8vh;
+    color: blue;
+  }
+  33.333332% {
+    top: 5vh;
+    color: cyan;
+  }
+  41.666665% {
+    top: 0vh;
+    color: green;
+  }
+  50% {
+    top: -5vh;
+    color: yellow;
+  }
+  58.333333% {
+    top: -8vh;
+    color: orange;
+  }
+  66.666666% {
+    top: -10vh;
+    color: red;
+  }
+  74.999999% {
+    top: -8vh;
+    color: orange;
+  }
+  83.333332% {
+    top: -5vh;
+    color: yellow;
+  }
+  91.666665% {
+    top: 0vh;
+    color: green;
+  }
+  100% {
+    top: 5vh;
+    color: cyan;
+  }
+}
+
+@-webkit-keyframes letter_snake-7 {
+  0% {
+    top: 0vh;
+    color: green;
+  }
+  8.3333333% {
+    top: 5vh;
+    color: cyan;
+  }
+  16.666666% {
+    top: 8vh;
+    color: blue;
+  }
+  24.999999% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  33.333332% {
+    top: 8vh;
+    color: blue;
+  }
+  41.666665% {
+    top: 5vh;
+    color: cyan;
+  }
+  50% {
+    top: 0vh;
+    color: green;
+  }
+  58.333333% {
+    top: -5vh;
+    color: yellow;
+  }
+  66.666666% {
+    top: -8vh;
+    color: orange;
+  }
+  74.999999% {
+    top: -10vh;
+    color: red;
+  }
+  83.333332% {
+    top: -8vh;
+    color: orange;
+  }
+  91.666665% {
+    top: -5vh;
+    color: yellow;
+  }
+  100% {
+    top: 0vh;
+    color: green;
+  }
+}
+
+@keyframes letter_snake-7 {
+  0% {
+    top: 0vh;
+    color: green;
+  }
+  8.3333333% {
+    top: 5vh;
+    color: cyan;
+  }
+  16.666666% {
+    top: 8vh;
+    color: blue;
+  }
+  24.999999% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  33.333332% {
+    top: 8vh;
+    color: blue;
+  }
+  41.666665% {
+    top: 5vh;
+    color: cyan;
+  }
+  50% {
+    top: 0vh;
+    color: green;
+  }
+  58.333333% {
+    top: -5vh;
+    color: yellow;
+  }
+  66.666666% {
+    top: -8vh;
+    color: orange;
+  }
+  74.999999% {
+    top: -10vh;
+    color: red;
+  }
+  83.333332% {
+    top: -8vh;
+    color: orange;
+  }
+  91.666665% {
+    top: -5vh;
+    color: yellow;
+  }
+  100% {
+    top: 0vh;
+    color: green;
+  }
+}
+
+@-webkit-keyframes letter_snake-8 {
+  0% {
+    top: -5vh;
+    color: yellow;
+  }
+  8.3333333% {
+    top: 0vh;
+    color: green;
+  }
+  16.666666% {
+    top: 5vh;
+    color: cyan;
+  }
+  24.999999% {
+    top: 8vh;
+    color: blue;
+  }
+  33.333332% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  41.666665% {
+    top: 8vh;
+    color: blue;
+  }
+  50% {
+    top: 5vh;
+    color: cyan;
+  }
+  58.333333% {
+    top: 0vh;
+    color: green;
+  }
+  66.666666% {
+    top: -5vh;
+    color: yellow;
+  }
+  74.999999% {
+    top: -8vh;
+    color: orange;
+  }
+  83.333332% {
+    top: -10vh;
+    color: red;
+  }
+  91.666665% {
+    top: -8vh;
+    color: orange;
+  }
+  100% {
+    top: -5vh;
+    color: yellow;
+  }
+}
+
+@keyframes letter_snake-8 {
+  0% {
+    top: -5vh;
+    color: yellow;
+  }
+  8.3333333% {
+    top: 0vh;
+    color: green;
+  }
+  16.666666% {
+    top: 5vh;
+    color: cyan;
+  }
+  24.999999% {
+    top: 8vh;
+    color: blue;
+  }
+  33.333332% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  41.666665% {
+    top: 8vh;
+    color: blue;
+  }
+  50% {
+    top: 5vh;
+    color: cyan;
+  }
+  58.333333% {
+    top: 0vh;
+    color: green;
+  }
+  66.666666% {
+    top: -5vh;
+    color: yellow;
+  }
+  74.999999% {
+    top: -8vh;
+    color: orange;
+  }
+  83.333332% {
+    top: -10vh;
+    color: red;
+  }
+  91.666665% {
+    top: -8vh;
+    color: orange;
+  }
+  100% {
+    top: -5vh;
+    color: yellow;
+  }
+}
+
+@-webkit-keyframes letter_snake-9 {
+  0% {
+    top: -8vh;
+    color: orange;
+  }
+  8.3333333% {
+    top: -5vh;
+    color: yellow;
+  }
+  16.666666% {
+    top: 0vh;
+    color: green;
+  }
+  24.999999% {
+    top: 5vh;
+    color: cyan;
+  }
+  33.333332% {
+    top: 8vh;
+    color: blue;
+  }
+  41.666665% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  50% {
+    top: 8vh;
+    color: blue;
+  }
+  58.333333% {
+    top: 5vh;
+    color: cyan;
+  }
+  66.666666% {
+    top: 0vh;
+    color: green;
+  }
+  74.999999% {
+    top: -5vh;
+    color: yellow;
+  }
+  83.333332% {
+    top: -8vh;
+    color: orange;
+  }
+  91.666665% {
+    top: -10vh;
+    color: red;
+  }
+  100% {
+    top: -8vh;
+    color: orange;
+  }
+}
+
+@keyframes letter_snake-9 {
+  0% {
+    top: -8vh;
+    color: orange;
+  }
+  8.3333333% {
+    top: -5vh;
+    color: yellow;
+  }
+  16.666666% {
+    top: 0vh;
+    color: green;
+  }
+  24.999999% {
+    top: 5vh;
+    color: cyan;
+  }
+  33.333332% {
+    top: 8vh;
+    color: blue;
+  }
+  41.666665% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  50% {
+    top: 8vh;
+    color: blue;
+  }
+  58.333333% {
+    top: 5vh;
+    color: cyan;
+  }
+  66.666666% {
+    top: 0vh;
+    color: green;
+  }
+  74.999999% {
+    top: -5vh;
+    color: yellow;
+  }
+  83.333332% {
+    top: -8vh;
+    color: orange;
+  }
+  91.666665% {
+    top: -10vh;
+    color: red;
+  }
+  100% {
+    top: -8vh;
+    color: orange;
+  }
+}
+
+@-webkit-keyframes letter_snake-10 {
+  0% {
+    top: -10vh;
+    color: red;
+  }
+  8.3333333% {
+    top: -8vh;
+    color: orange;
+  }
+  16.666666% {
+    top: -5vh;
+    color: yellow;
+  }
+  24.999999% {
+    top: 0vh;
+    color: green;
+  }
+  33.333332% {
+    top: 5vh;
+    color: cyan;
+  }
+  41.666665% {
+    top: 8vh;
+    color: blue;
+  }
+  50% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  58.333333% {
+    top: 8vh;
+    color: blue;
+  }
+  66.666666% {
+    top: 5vh;
+    color: cyan;
+  }
+  74.999999% {
+    top: 0vh;
+    color: green;
+  }
+  83.333332% {
+    top: -5vh;
+    color: yellow;
+  }
+  91.666665% {
+    top: -8vh;
+    color: orange;
+  }
+  100% {
+    top: -10vh;
+    color: red;
+  }
+}
+
+@keyframes letter_snake-10 {
+  0% {
+    top: -10vh;
+    color: red;
+  }
+  8.3333333% {
+    top: -8vh;
+    color: orange;
+  }
+  16.666666% {
+    top: -5vh;
+    color: yellow;
+  }
+  24.999999% {
+    top: 0vh;
+    color: green;
+  }
+  33.333332% {
+    top: 5vh;
+    color: cyan;
+  }
+  41.666665% {
+    top: 8vh;
+    color: blue;
+  }
+  50% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  58.333333% {
+    top: 8vh;
+    color: blue;
+  }
+  66.666666% {
+    top: 5vh;
+    color: cyan;
+  }
+  74.999999% {
+    top: 0vh;
+    color: green;
+  }
+  83.333332% {
+    top: -5vh;
+    color: yellow;
+  }
+  91.666665% {
+    top: -8vh;
+    color: orange;
+  }
+  100% {
+    top: -10vh;
+    color: red;
+  }
+}
+
+@-webkit-keyframes letter_snake-11 {
+  0% {
+    top: -8vh;
+    color: orange;
+  }
+  8.3333333% {
+    top: -10vh;
+    color: red;
+  }
+  16.666666% {
+    top: -8vh;
+    color: orange;
+  }
+  24.999999% {
+    top: -5vh;
+    color: yellow;
+  }
+  33.333332% {
+    top: 0vh;
+    color: green;
+  }
+  41.666665% {
+    top: 5vh;
+    color: cyan;
+  }
+  50% {
+    top: 8vh;
+    color: blue;
+  }
+  58.333333% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  66.666666% {
+    top: 8vh;
+    color: blue;
+  }
+  74.999999% {
+    top: 5vh;
+    color: cyan;
+  }
+  83.333332% {
+    top: 0vh;
+    color: green;
+  }
+  91.666665% {
+    top: -5vh;
+    color: yellow;
+  }
+  100% {
+    top: -8vh;
+    color: orange;
+  }
+}
+
+@keyframes letter_snake-11 {
+  0% {
+    top: -8vh;
+    color: orange;
+  }
+  8.3333333% {
+    top: -10vh;
+    color: red;
+  }
+  16.666666% {
+    top: -8vh;
+    color: orange;
+  }
+  24.999999% {
+    top: -5vh;
+    color: yellow;
+  }
+  33.333332% {
+    top: 0vh;
+    color: green;
+  }
+  41.666665% {
+    top: 5vh;
+    color: cyan;
+  }
+  50% {
+    top: 8vh;
+    color: blue;
+  }
+  58.333333% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  66.666666% {
+    top: 8vh;
+    color: blue;
+  }
+  74.999999% {
+    top: 5vh;
+    color: cyan;
+  }
+  83.333332% {
+    top: 0vh;
+    color: green;
+  }
+  91.666665% {
+    top: -5vh;
+    color: yellow;
+  }
+  100% {
+    top: -8vh;
+    color: orange;
+  }
+}
+
+@-webkit-keyframes letter_snake-12 {
+  0% {
+    top: -5vh;
+    color: yellow;
+  }
+  8.3333333% {
+    top: -8vh;
+    color: orange;
+  }
+  16.666666% {
+    top: -10vh;
+    color: red;
+  }
+  24.999999% {
+    top: -8vh;
+    color: orange;
+  }
+  33.333332% {
+    top: -5vh;
+    color: yellow;
+  }
+  41.666665% {
+    top: 0vh;
+    color: green;
+  }
+  50% {
+    top: 5vh;
+    color: cyan;
+  }
+  58.333333% {
+    top: 8vh;
+    color: blue;
+  }
+  66.666666% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  74.999999% {
+    top: 8vh;
+    color: blue;
+  }
+  83.333332% {
+    top: 5vh;
+    color: cyan;
+  }
+  91.666665% {
+    top: 0vh;
+    color: green;
+  }
+  100% {
+    top: -5vh;
+    color: yellow;
+  }
+}
+
+@keyframes letter_snake-12 {
+  0% {
+    top: -5vh;
+    color: yellow;
+  }
+  8.3333333% {
+    top: -8vh;
+    color: orange;
+  }
+  16.666666% {
+    top: -10vh;
+    color: red;
+  }
+  24.999999% {
+    top: -8vh;
+    color: orange;
+  }
+  33.333332% {
+    top: -5vh;
+    color: yellow;
+  }
+  41.666665% {
+    top: 0vh;
+    color: green;
+  }
+  50% {
+    top: 5vh;
+    color: cyan;
+  }
+  58.333333% {
+    top: 8vh;
+    color: blue;
+  }
+  66.666666% {
+    top: 10vh;
+    color: blueviolet;
+  }
+  74.999999% {
+    top: 8vh;
+    color: blue;
+  }
+  83.333332% {
+    top: 5vh;
+    color: cyan;
+  }
+  91.666665% {
+    top: 0vh;
+    color: green;
+  }
+  100% {
+    top: -5vh;
+    color: yellow;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -74,11 +1412,103 @@ div {
   font-family: "Merriweather", sans-serif;
   font-weight: 300;
   white-space: nowrap;
+  position: fixed;
+  top: 10vh;
+  left: 100vw;
+  -webkit-animation: run_string 30s linear 1s infinite normal;
+          animation: run_string 30s linear 1s infinite normal;
+}
+
+.play_field__ticker__text__letter-01,
+.play_field__ticker__text__letter-02,
+.play_field__ticker__text__letter-03,
+.play_field__ticker__text__letter-04,
+.play_field__ticker__text__letter-05,
+.play_field__ticker__text__letter-06,
+.play_field__ticker__text__letter-07,
+.play_field__ticker__text__letter-08,
+.play_field__ticker__text__letter-09,
+.play_field__ticker__text__letter-10,
+.play_field__ticker__text__letter-11,
+.play_field__ticker__text__letter-12 {
+  position: relative;
+  top: 0;
+}
+
+.play_field__ticker__text__letter-01 {
+  top: 0vh;
+  -webkit-animation: letter_snake-1 1s linear 0s infinite;
+          animation: letter_snake-1 1s linear 0s infinite;
+}
+
+.play_field__ticker__text__letter-02 {
+  top: 5vh;
+  -webkit-animation: letter_snake-2 1s linear 0s infinite;
+          animation: letter_snake-2 1s linear 0s infinite;
+}
+
+.play_field__ticker__text__letter-03 {
+  top: 8vh;
+  -webkit-animation: letter_snake-3 1s linear 0s infinite;
+          animation: letter_snake-3 1s linear 0s infinite;
+}
+
+.play_field__ticker__text__letter-04 {
+  top: 10vh;
+  -webkit-animation: letter_snake-4 1s linear 0s infinite;
+          animation: letter_snake-4 1s linear 0s infinite;
+}
+
+.play_field__ticker__text__letter-05 {
+  top: 8vh;
+  -webkit-animation: letter_snake-5 1s linear 0s infinite;
+          animation: letter_snake-5 1s linear 0s infinite;
+}
+
+.play_field__ticker__text__letter-06 {
+  top: 5vh;
+  -webkit-animation: letter_snake-6 1s linear 0s infinite;
+          animation: letter_snake-6 1s linear 0s infinite;
+}
+
+.play_field__ticker__text__letter-07 {
+  top: 0vh;
+  -webkit-animation: letter_snake-7 1s linear 0s infinite;
+          animation: letter_snake-7 1s linear 0s infinite;
+}
+
+.play_field__ticker__text__letter-08 {
+  top: -5vh;
+  -webkit-animation: letter_snake-8 1s linear 0s infinite;
+          animation: letter_snake-8 1s linear 0s infinite;
+}
+
+.play_field__ticker__text__letter-09 {
+  top: -8vh;
+  -webkit-animation: letter_snake-9 1s linear 0s infinite;
+          animation: letter_snake-9 1s linear 0s infinite;
+}
+
+.play_field__ticker__text__letter-10 {
+  top: -10vh;
+  -webkit-animation: letter_snake-10 1s linear 0s infinite;
+          animation: letter_snake-10 1s linear 0s infinite;
+}
+
+.play_field__ticker__text__letter-11 {
+  top: -8vh;
+  -webkit-animation: letter_snake-11 1s linear 0s infinite;
+          animation: letter_snake-11 1s linear 0s infinite;
+}
+
+.play_field__ticker__text__letter-12 {
+  top: -5vh;
+  -webkit-animation: letter_snake-12 1s linear 0s infinite;
+          animation: letter_snake-12 1s linear 0s infinite;
 }
 
 .play_field__main {
-  margin-top: 10vh;
-  margin-left: 10vw;
+  margin: 10vh 10vw 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +1544,10 @@ div {
   text-align: center;
 }
 
+.play_field__main__sticker__title_mobile {
+  display: none;
+}
+
 .play_field__main__menu__level:hover {
   color: cyan;
   background: #0000ff87;
@@ -134,21 +1568,98 @@ div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding-right: 13vw;
 }
 
+.play_field__main__sticker__title_mobile,
 .play_field__main__sticker__title {
   text-align: center;
-  white-space: nowrap;
   font-size: 12vh;
   line-height: 10vh;
   color: yellow;
   font-family: "KoHo", "Oswald", sans-serif;
   font-weight: 500;
+}
+
+@media (max-width: 620px) {
+  .play_field__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .play_field__main__menu {
+    background-image: url(../img/favicon_duck_hunt_new.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .play_field__main__sticker__title_mobile {
+    display: block;
+    text-align: center;
+    font-size: 5vh;
+    line-height: 6vh;
+  }
+  .play_field__main__menu__level {
+    width: 20vw;
+  }
+  .play_field__main__sticker {
+    background-image: none;
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .play_field__main__sticker__title {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .play_field__main__menu__level {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 100px) {
+  .play_field__main__menu__level {
+    height: 4vh;
+    font-size: 2vh;
+    line-height: 2vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }
 /*# sourceMappingURL=style.css.map */
