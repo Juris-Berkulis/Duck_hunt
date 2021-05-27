@@ -12,8 +12,10 @@
 </head>
 <body>
     <section class="play_field">
+        <div class="play_field__position">
+            <h1 class="play_field__position__title">Level 3</h1>
+        </div>
         <div class="play_field__sky">
-            <h1 class="play_field__sky__title">Duck hunt</h1>
             <div class="play_field__sky__duck">
                 <input class="play_field__sky__duck__checkbox" type="checkbox" id="duck_01">
                 <label class="play_field__sky__duck__label play_field__sky__duck__label-1" for="duck_01">
@@ -136,7 +138,10 @@
             </div>
         </div>
         <div class="play_field__land">
-            <button class="play_field__land__button" onClick="window.location.reload()">Start over</button>
+            <div class="play_field__land__btn_box">
+                <button class="play_field__land__button" onClick="window.location.reload()">Start over</button>
+                <a class="play_field__land__button play_field__land__link" href="index.html">Menu</a>
+            </div>
             <!-- /**
             * ! В некоторых браузерах звук в теге "audio" не воспроизводится автоматически из-за политики некоторых браузеров:
             */ -->

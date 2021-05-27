@@ -1,4 +1,5 @@
-$initial_delay: 10;
+$initial_duration: 8;
+$initial_delay: 0;
 $sky_height: 86vh;
 $duck_width: 5vw;
 $flight_height_ducks: 90;
@@ -22,6 +23,11 @@ $total_ducks: "/20";
   line-height: 5vh;
 }
 
+@mixin title_font_65 {
+  font-size: 2vh;
+  line-height: 2vh;
+}
+
 @mixin button_font($fs: 4vh, $lh: 5vh) {
   font-size: $fs;
   line-height: $lh;
@@ -33,6 +39,11 @@ $total_ducks: "/20";
 }
 
 @mixin button_font_400($fs: 2vh, $lh: 3vh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin button_font_150($fs: 1vh, $lh: 1vh) {
   font-size: $fs;
   line-height: $lh;
 }
@@ -53,6 +64,16 @@ $total_ducks: "/20";
 }
 
 @mixin count_font_400($fs: 3vh, $lh: 4vh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin count_font_150($fs: 2vh, $lh: 2vh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin count_font_65($fs: 1vh, $lh: 1vh) {
   font-size: $fs;
   line-height: $lh;
 }
@@ -105,7 +126,17 @@ $total_ducks: "/20";
   font-style: normal;
 }
 
-@keyframes letter_spacing_title {
+@keyframes turn_into_a_point {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    top: 0;
+  }
+}
+
+@keyframes letter_spacing_level {
   0% {
     letter-spacing: normal;
     color: transparent;
@@ -613,6 +644,29 @@ div {
   background-position: center bottom;
   counter-reset: duck_count;
   cursor: crosshair;
+  overflow: hidden;
+}
+
+.play_field__position {
+  position: fixed;
+  top: 40vh;
+  right: 0;
+  left: 0;
+  animation: turn_into_a_point 0.01s linear
+    (($initial_duration + $initial_delay) * 1s) 1 normal forwards;
+  transform-origin: left top;
+}
+
+.play_field__position__title {
+  text-align: center;
+  white-space: nowrap;
+  @include title_font;
+  color: #ffffff;
+  animation: letter_spacing_level ($initial_duration * 1s) ease-in 1
+    ($initial_delay * 1s) normal forwards;
+  transform-origin: center center;
+  font-family: "KoHo", "Oswald", sans-serif;
+  font-weight: 500;
 }
 
 .play_field__sky {
@@ -621,18 +675,6 @@ div {
   padding-top: 40vh;
   position: relative;
   overflow: hidden;
-}
-
-.play_field__sky__title {
-  text-align: center;
-  white-space: nowrap;
-  @include title_font;
-  color: #ffffff;
-  animation: letter_spacing_title ($initial_delay * 1s) ease-out 1 0s normal
-    forwards;
-  transform-origin: center center;
-  font-family: "KoHo", "Oswald", sans-serif;
-  font-weight: 500;
 }
 
 .play_field__sky__duck__checkbox[type="checkbox"] {
@@ -656,129 +698,129 @@ div {
 
 .play_field__sky__duck__label-1 {
   animation: duck_fly-1 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay - 1 + random($limit: 15)) * 1s) 1 reverse both;
+    (($initial_duration - 1 + random($limit: 15)) * 1s) 1 reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-2 {
   animation: duck_fly-2 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 0 + random($limit: 15)) * 1s) 1 reverse both;
+    (($initial_duration + 0 + random($limit: 15)) * 1s) 1 reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-3 {
   animation: duck_fly-3 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 1 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 1 * $time_between_ducks + random($limit: 15)) * 1s) 1
     reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-4 {
   animation: duck_fly-4 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 2 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 2 * $time_between_ducks + random($limit: 15)) * 1s) 1
     reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-5 {
   animation: duck_fly-5 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 3 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 3 * $time_between_ducks + random($limit: 15)) * 1s) 1
     reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-6 {
   animation: duck_fly-6 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 4 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 4 * $time_between_ducks + random($limit: 15)) * 1s) 1
     normal both;
 }
 
 .play_field__sky__duck__label-7 {
   animation: duck_fly-7 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 5 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 5 * $time_between_ducks + random($limit: 15)) * 1s) 1
     normal both;
 }
 
 .play_field__sky__duck__label-8 {
   animation: duck_fly-8 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 6 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 6 * $time_between_ducks + random($limit: 15)) * 1s) 1
     normal both;
 }
 
 .play_field__sky__duck__label-9 {
   animation: duck_fly-9 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 7 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 7 * $time_between_ducks + random($limit: 15)) * 1s) 1
     normal both;
 }
 
 .play_field__sky__duck__label-10 {
   animation: duck_fly-10 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 8 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 8 * $time_between_ducks + random($limit: 15)) * 1s) 1
     normal both;
 }
 
 .play_field__sky__duck__label-11 {
   animation: duck_fly-11 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 9 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 9 * $time_between_ducks + random($limit: 15)) * 1s) 1
     reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-12 {
   animation: duck_fly-12 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 10 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 10 * $time_between_ducks + random($limit: 15)) * 1s) 1
     reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-13 {
   animation: duck_fly-13 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 11 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 11 * $time_between_ducks + random($limit: 15)) * 1s) 1
     reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-14 {
   animation: duck_fly-14 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 12 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 12 * $time_between_ducks + random($limit: 15)) * 1s) 1
     reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-15 {
   animation: duck_fly-15 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 13 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 13 * $time_between_ducks + random($limit: 15)) * 1s) 1
     reverse both;
   transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-16 {
   animation: duck_fly-16 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 14 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 14 * $time_between_ducks + random($limit: 15)) * 1s) 1
     normal both;
 }
 
 .play_field__sky__duck__label-17 {
   animation: duck_fly-17 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 15 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 15 * $time_between_ducks + random($limit: 15)) * 1s) 1
     normal both;
 }
 
 .play_field__sky__duck__label-18 {
   animation: duck_fly-18 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 16 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 16 * $time_between_ducks + random($limit: 15)) * 1s) 1
     normal both;
 }
 
 .play_field__sky__duck__label-19 {
   animation: duck_fly-19 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 17 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 17 * $time_between_ducks + random($limit: 15)) * 1s) 1
     normal both;
 }
 
 .play_field__sky__duck__label-20 {
   animation: duck_fly-20 ((2 + random($limit: 4)) * 1s) linear
-    (($initial_delay + 18 * $time_between_ducks + random($limit: 15)) * 1s) 1
+    (($initial_duration + 18 * $time_between_ducks + random($limit: 15)) * 1s) 1
     normal both;
 }
 
@@ -804,6 +846,11 @@ div {
   align-items: flex-start;
 }
 
+.play_field__land__btn_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .play_field__land__button {
   color: blue;
   background: #00ffff47;
@@ -816,6 +863,10 @@ div {
   cursor: pointer;
   font-family: "Roboto";
   font-weight: 400;
+}
+
+.play_field__land__link {
+  text-decoration: none;
 }
 
 .play_field__land__button:hover {
@@ -860,7 +911,7 @@ div {
 }
 
 @media (max-width: 600px) {
-  .play_field__sky__title {
+  .play_field__position__title {
     @include title_font_600;
   }
 
@@ -879,7 +930,7 @@ div {
 }
 
 @media (max-width: 430px) {
-  .play_field__sky__title {
+  .play_field__position__title {
     @include title_font_400;
   }
 
@@ -913,5 +964,40 @@ div {
     line-height: 2vh;
     text-align: center;
     margin-left: $land_text_margin;
+  }
+}
+
+@media (max-width: 150px) {
+  .play_field__land__button {
+    @include button_font_150;
+  }
+
+  .play_field__land__count {
+    @include count_font_150;
+  }
+
+  .play_field__land__count::after {
+    @include count_font_150;
+  }
+}
+
+@media (max-width: 65px) {
+  .play_field__position__title {
+    @include title_font_65;
+  }
+
+  .play_field__land__btn_box {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+  }
+
+  .play_field__land__count {
+    @include count_font_65;
+  }
+
+  .play_field__land__count::after {
+    @include count_font_65;
   }
 }
