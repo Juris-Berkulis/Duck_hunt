@@ -3,10 +3,10 @@ $initial_delay: 0;
 $sky_height: 86vh;
 $duck_width: 5vw;
 $flight_height_ducks: 90;
-$animation_fly_duck_duration_min_level_03: 2;
-$animation_fly_duck_duration_limit_for_random_level_03: 4;
-$animation_fly_duck_delay_limit_for_random_level_03: 15;
-$time_between_ducks_level_03: 2;
+$animation_fly_duck_duration_min_level_04: 2;
+$animation_fly_duck_duration_limit_for_random_level_04: 4;
+$animation_fly_duck_delay_limit_for_random_level_04: 5;
+$time_between_ducks_level_04: 1;
 $land_text_margin: 2vw;
 $button_shift: 1vh;
 $total_ducks: "/25";
@@ -818,9 +818,9 @@ div {
   animation: duck_fly-1
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
@@ -828,7 +828,7 @@ div {
     (
       (
           $initial_duration - 1 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -839,9 +839,9 @@ div {
   animation: duck_fly-2
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
@@ -849,7 +849,7 @@ div {
     (
       (
           $initial_duration + 0 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -860,17 +860,17 @@ div {
   animation: duck_fly-3
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 1 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 1 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -881,17 +881,17 @@ div {
   animation: duck_fly-4
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 2 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 2 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -902,17 +902,17 @@ div {
   animation: duck_fly-5
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 3 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 3 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -923,17 +923,17 @@ div {
   animation: duck_fly-6
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 4 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 4 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -943,17 +943,17 @@ div {
   animation: duck_fly-7
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 5 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 5 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -963,17 +963,17 @@ div {
   animation: duck_fly-8
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 6 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 6 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -983,17 +983,17 @@ div {
   animation: duck_fly-9
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 7 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 7 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -1003,17 +1003,17 @@ div {
   animation: duck_fly-10
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 8 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 8 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -1023,17 +1023,17 @@ div {
   animation: duck_fly-11
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 9 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 9 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -1044,17 +1044,17 @@ div {
   animation: duck_fly-12
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 10 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 10 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -1065,17 +1065,17 @@ div {
   animation: duck_fly-13
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 11 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 11 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -1086,17 +1086,17 @@ div {
   animation: duck_fly-14
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 12 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 12 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -1107,17 +1107,17 @@ div {
   animation: duck_fly-15
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 13 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 13 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -1128,17 +1128,17 @@ div {
   animation: duck_fly-16
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 14 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 14 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -1148,17 +1148,17 @@ div {
   animation: duck_fly-17
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 15 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 15 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -1168,17 +1168,17 @@ div {
   animation: duck_fly-18
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 16 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 16 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -1188,17 +1188,17 @@ div {
   animation: duck_fly-19
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 17 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 17 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -1208,17 +1208,17 @@ div {
   animation: duck_fly-20
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 18 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 18 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -1228,17 +1228,17 @@ div {
   animation: duck_fly-21
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 19 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 19 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -1249,17 +1249,17 @@ div {
   animation: duck_fly-22
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 20 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 20 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -1269,17 +1269,17 @@ div {
   animation: duck_fly-23
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 21 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 21 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
@@ -1290,17 +1290,17 @@ div {
   animation: duck_fly-24
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 22 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 22 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 normal both;
@@ -1310,17 +1310,17 @@ div {
   animation: duck_fly-25
     (
       (
-          $animation_fly_duck_duration_min_level_03 +
+          $animation_fly_duck_duration_min_level_04 +
             random(
-              $limit: $animation_fly_duck_duration_limit_for_random_level_03
+              $limit: $animation_fly_duck_duration_limit_for_random_level_04
             )
         ) * 1s
     )
     linear
     (
       (
-          $initial_duration + 23 * $time_between_ducks_level_03 +
-            random($limit: $animation_fly_duck_delay_limit_for_random_level_03)
+          $initial_duration + 23 * $time_between_ducks_level_04 +
+            random($limit: $animation_fly_duck_delay_limit_for_random_level_04)
         ) * 1s
     )
     1 reverse both;
