@@ -1,3 +1,5 @@
+$screen_reference_height_2500: 2500;
+$ticker_font_font_size: 9vh;
 $button_shift: 1vh;
 $animation_run_string_duration: 30s;
 $animation_run_string_delay: 1s;
@@ -12,7 +14,7 @@ $letter_position_6: 8vh;
 $letter_position_7: 10vh;
 $title_rotate_duration: 4s;
 
-@mixin ticker_font($fs: 9vh, $lh: 10vh) {
+@mixin ticker_font($fs: $ticker_font_font_size, $lh: 10vh) {
   font-size: $fs;
   line-height: $lh;
 }
@@ -22,7 +24,7 @@ $title_rotate_duration: 4s;
   line-height: $lh;
 }
 
-@mixin link_font_100($fs: 2vh, $lh: 2vh) {
+@mixin link_font_800($fs: 2vh, $lh: 2vh) {
   font-size: $fs;
   line-height: $lh;
 }
@@ -32,9 +34,9 @@ $title_rotate_duration: 4s;
   line-height: 10vh;
 }
 
-@mixin main_title_font_620 {
-  font-size: 5vh;
-  line-height: 6vh;
+@mixin main_title_font_portrait {
+  font-size: 8vh;
+  line-height: 9vh;
 }
 
 @mixin letter_run_1 {
@@ -126,7 +128,7 @@ $title_rotate_duration: 4s;
   }
 
   100% {
-    left: -7200px;
+    left: -133 * $ticker_font_font_size;
   }
 }
 
@@ -778,47 +780,171 @@ $title_rotate_duration: 4s;
   }
 }
 
+$title_rotate_text_shadow_x: 0.08;
+$title_rotate_text_shadow_y: 0.04;
+$title_rotate_text_shadow_color: #c4c402;
+
 @keyframes title_rotate_inicial {
   0% {
-    transform: rotate3d(0, 50, 0, 0);
-    text-shadow: 0vh -0.05vw 0 #c4c402, 0vh -0.1vw 0 #c4c402,
-      0vh -0.15vw 0 #c4c402, 0vh -0.2vw 0 #c4c402, 0vh -0.25vw 0 #c4c402,
-      0vh -0.3vw 0 #c4c402, 0vh -0.35vw 0 #c4c402, 0vh -0.4vw 0 #c4c402,
-      0vh -0.45vw 0 #c4c402, 0vh -0.5vw 0 #c4c402;
+    transform: rotate3d(0, 0, 0, 0);
+    text-shadow: 0 (-1 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      0 (-2 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      0 (-3 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      0 (-4 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      0 (-5 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      0 (-6 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      0 (-7 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      0 (-8 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      0 (-9 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      0 (-10 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color;
   }
 
   100% {
     transform: rotate3d(0, 50, 0, -45deg);
-    text-shadow: 0.2vh -0.05vw 0 #c4c402, 0.4vh -0.1vw 0 #c4c402,
-      0.6vh -0.15vw 0 #c4c402, 0.8vh -0.2vw 0 #c4c402, 1vh -0.25vw 0 #c4c402,
-      1.2vh -0.3vw 0 #c4c402, 1.4vh -0.35vw 0 #c4c402, 1.6vh -0.4vw 0 #c4c402,
-      1.8vh -0.45vw 0 #c4c402, 2vh -0.5vw 0 #c4c402;
+    text-shadow: (1 * $title_rotate_text_shadow_x * 1vw)
+        (-1 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (2 * $title_rotate_text_shadow_x * 1vw)
+        (-2 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (3 * $title_rotate_text_shadow_x * 1vw)
+        (-3 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (4 * $title_rotate_text_shadow_x * 1vw)
+        (-4 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (5 * $title_rotate_text_shadow_x * 1vw)
+        (-5 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (6 * $title_rotate_text_shadow_x * 1vw)
+        (-6 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (7 * $title_rotate_text_shadow_x * 1vw)
+        (-7 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (8 * $title_rotate_text_shadow_x * 1vw)
+        (-8 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (9 * $title_rotate_text_shadow_x * 1vw)
+        (-9 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (10 * $title_rotate_text_shadow_x * 1vw)
+        (-10 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color;
   }
 }
 
 @keyframes title_rotate {
   0% {
     transform: rotate3d(0, 50, 0, -45deg);
-    text-shadow: 0.2vh -0.05vw 0 #c4c402, 0.4vh -0.1vw 0 #c4c402,
-      0.6vh -0.15vw 0 #c4c402, 0.8vh -0.2vw 0 #c4c402, 1vh -0.25vw 0 #c4c402,
-      1.2vh -0.3vw 0 #c4c402, 1.4vh -0.35vw 0 #c4c402, 1.6vh -0.4vw 0 #c4c402,
-      1.8vh -0.45vw 0 #c4c402, 2vh -0.5vw 0 #c4c402;
+    text-shadow: (1 * $title_rotate_text_shadow_x * 1vw)
+        (-1 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (2 * $title_rotate_text_shadow_x * 1vw)
+        (-2 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (3 * $title_rotate_text_shadow_x * 1vw)
+        (-3 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (4 * $title_rotate_text_shadow_x * 1vw)
+        (-4 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (5 * $title_rotate_text_shadow_x * 1vw)
+        (-5 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (6 * $title_rotate_text_shadow_x * 1vw)
+        (-6 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (7 * $title_rotate_text_shadow_x * 1vw)
+        (-7 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (8 * $title_rotate_text_shadow_x * 1vw)
+        (-8 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (9 * $title_rotate_text_shadow_x * 1vw)
+        (-9 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (10 * $title_rotate_text_shadow_x * 1vw)
+        (-10 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color;
   }
 
   50% {
-    transform: rotate3d(0, 2, 0, 45deg);
-    text-shadow: -0.2vh -0.05vw 0 #c4c402, -0.4vh -0.1vw 0 #c4c402,
-      -0.6vh -0.15vw 0 #c4c402, -0.8vh -0.2vw 0 #c4c402, -1vh -0.25vw 0 #c4c402,
-      -1.2vh -0.3vw 0 #c4c402, -1.4vh -0.35vw 0 #c4c402, -1.6vh -0.4vw 0 #c4c402,
-      -1.8vh -0.45vw 0 #c4c402, -2vh -0.5vw 0 #c4c402;
+    transform: rotate3d(0, 50, 0, 45deg);
+    text-shadow: (-1 * $title_rotate_text_shadow_x * 1vw)
+        (-1 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (-2 * $title_rotate_text_shadow_x * 1vw)
+        (-2 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (-3 * $title_rotate_text_shadow_x * 1vw)
+        (-3 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (-4 * $title_rotate_text_shadow_x * 1vw)
+        (-4 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (-5 * $title_rotate_text_shadow_x * 1vw)
+        (-5 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (-6 * $title_rotate_text_shadow_x * 1vw)
+        (-6 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (-7 * $title_rotate_text_shadow_x * 1vw)
+        (-7 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (-8 * $title_rotate_text_shadow_x * 1vw)
+        (-8 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (-9 * $title_rotate_text_shadow_x * 1vw)
+        (-9 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (-10 * $title_rotate_text_shadow_x * 1vw)
+        (-10 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color;
   }
 
   100% {
     transform: rotate3d(0, 50, 0, -45deg);
-    text-shadow: 0.2vh -0.05vw 0 #c4c402, 0.4vh -0.1vw 0 #c4c402,
-      0.6vh -0.15vw 0 #c4c402, 0.8vh -0.2vw 0 #c4c402, 1vh -0.25vw 0 #c4c402,
-      1.2vh -0.3vw 0 #c4c402, 1.4vh -0.35vw 0 #c4c402, 1.6vh -0.4vw 0 #c4c402,
-      1.8vh -0.45vw 0 #c4c402, 2vh -0.5vw 0 #c4c402;
+    text-shadow: (1 * $title_rotate_text_shadow_x * 1vw)
+        (-1 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (2 * $title_rotate_text_shadow_x * 1vw)
+        (-2 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (3 * $title_rotate_text_shadow_x * 1vw)
+        (-3 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (4 * $title_rotate_text_shadow_x * 1vw)
+        (-4 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (5 * $title_rotate_text_shadow_x * 1vw)
+        (-5 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (6 * $title_rotate_text_shadow_x * 1vw)
+        (-6 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (7 * $title_rotate_text_shadow_x * 1vw)
+        (-7 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (8 * $title_rotate_text_shadow_x * 1vw)
+        (-8 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (9 * $title_rotate_text_shadow_x * 1vw)
+        (-9 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color,
+      (10 * $title_rotate_text_shadow_x * 1vw)
+        (-10 * $title_rotate_text_shadow_y * 1vh) 0
+        $title_rotate_text_shadow_color;
   }
 }
 
@@ -954,7 +1080,7 @@ div {
 
 .play_field__main__menu,
 .play_field__main__sticker {
-  perspective: 1000px;
+  perspective: 2000px;
 }
 
 .play_field__main__menu {
@@ -963,7 +1089,7 @@ div {
 }
 
 .play_field__main__menu__level {
-  width: 10vw;
+  width: 20vh;
   height: 5vh;
   color: blue;
   background: #00ffff47;
@@ -1001,7 +1127,7 @@ div {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-right: 13vw;
+  padding-right: 12vw;
 }
 
 .play_field__main__sticker__title_mobile,
@@ -1021,7 +1147,7 @@ div {
   margin-bottom: 1vh;
 }
 
-@media (max-width: 620px) {
+@media screen and (orientation: portrait) {
   .play_field__main {
     display: flex;
     flex-wrap: nowrap;
@@ -1044,7 +1170,7 @@ div {
   .play_field__main__sticker__title_mobile {
     display: block;
     text-align: center;
-    @include main_title_font_620;
+    @include main_title_font_portrait;
   }
 
   .play_field__main__menu__level {
@@ -1066,16 +1192,16 @@ div {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 1100px) {
   .play_field__main__menu__level {
     width: 80vw;
   }
 }
 
-@media (max-width: 100px) {
+@media (max-width: 800px) {
   .play_field__main__menu__level {
     height: 4vh;
-    @include link_font_100;
+    @include link_font_800;
     box-sizing: border-box;
   }
 }
