@@ -126,103 +126,103 @@
 @-webkit-keyframes duck_fly-1 {
   0% {
     left: -5vw;
-    bottom: 46%;
+    bottom: 43%;
   }
   25% {
     left: 25vw;
-    bottom: 66%;
+    bottom: 65%;
   }
   50% {
     left: 50vw;
-    bottom: 14%;
+    bottom: 59%;
   }
   75% {
     left: 75vw;
-    bottom: 38%;
+    bottom: 76%;
   }
   100% {
     left: 100vw;
-    bottom: 29%;
+    bottom: 18%;
   }
 }
 
 @keyframes duck_fly-1 {
   0% {
     left: -5vw;
-    bottom: 46%;
+    bottom: 43%;
   }
   25% {
     left: 25vw;
-    bottom: 66%;
+    bottom: 65%;
   }
   50% {
     left: 50vw;
-    bottom: 14%;
+    bottom: 59%;
   }
   75% {
     left: 75vw;
-    bottom: 38%;
+    bottom: 76%;
   }
   100% {
     left: 100vw;
-    bottom: 29%;
+    bottom: 18%;
   }
 }
 
 @-webkit-keyframes duck_fly-2 {
   0% {
     left: -5vw;
-    bottom: 14%;
+    bottom: 27%;
   }
   25% {
     left: 25vw;
-    bottom: 87%;
+    bottom: 39%;
   }
   50% {
     left: 50vw;
-    bottom: 61%;
+    bottom: 4%;
   }
   75% {
     left: 75vw;
-    bottom: 38%;
+    bottom: 84%;
   }
   100% {
     left: 100vw;
-    bottom: 41%;
+    bottom: 68%;
   }
 }
 
 @keyframes duck_fly-2 {
   0% {
     left: -5vw;
-    bottom: 14%;
+    bottom: 27%;
   }
   25% {
     left: 25vw;
-    bottom: 87%;
+    bottom: 39%;
   }
   50% {
     left: 50vw;
-    bottom: 61%;
+    bottom: 4%;
   }
   75% {
     left: 75vw;
-    bottom: 38%;
+    bottom: 84%;
   }
   100% {
     left: 100vw;
-    bottom: 41%;
+    bottom: 68%;
   }
 }
 
 @-webkit-keyframes duck_fly-3 {
   0% {
     left: -5vw;
-    bottom: 43%;
+    bottom: 58%;
   }
   25% {
     left: 25vw;
-    bottom: 58%;
+    bottom: 61%;
   }
   50% {
     left: 50vw;
@@ -230,22 +230,22 @@
   }
   75% {
     left: 75vw;
-    bottom: 62%;
+    bottom: 82%;
   }
   100% {
     left: 100vw;
-    bottom: 22%;
+    bottom: 7%;
   }
 }
 
 @keyframes duck_fly-3 {
   0% {
     left: -5vw;
-    bottom: 43%;
+    bottom: 58%;
   }
   25% {
     left: 25vw;
-    bottom: 58%;
+    bottom: 61%;
   }
   50% {
     left: 50vw;
@@ -253,7 +253,214 @@
   }
   75% {
     left: 75vw;
-    bottom: 62%;
+    bottom: 82%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 7%;
+  }
+}
+
+@-webkit-keyframes duck_fly-4 {
+  0% {
+    left: -5vw;
+    bottom: 64%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 37%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 40%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 59%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 50%;
+  }
+}
+
+@keyframes duck_fly-4 {
+  0% {
+    left: -5vw;
+    bottom: 64%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 37%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 40%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 59%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 50%;
+  }
+}
+
+@-webkit-keyframes duck_fly-5 {
+  0% {
+    left: -5vw;
+    bottom: 75%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 2%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 12%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 57%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 9%;
+  }
+}
+
+@keyframes duck_fly-5 {
+  0% {
+    left: -5vw;
+    bottom: 75%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 2%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 12%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 57%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 9%;
+  }
+}
+
+@-webkit-keyframes duck_fly-6 {
+  0% {
+    left: -5vw;
+    bottom: 76%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 82%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 71%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 39%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 85%;
+  }
+}
+
+@keyframes duck_fly-6 {
+  0% {
+    left: -5vw;
+    bottom: 76%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 82%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 71%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 39%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 85%;
+  }
+}
+
+@-webkit-keyframes duck_fly-7 {
+  0% {
+    left: -5vw;
+    bottom: 5%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 39%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 54%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 74%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 4%;
+  }
+}
+
+@keyframes duck_fly-7 {
+  0% {
+    left: -5vw;
+    bottom: 5%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 39%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 54%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 74%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 4%;
+  }
+}
+
+@-webkit-keyframes duck_fly-8 {
+  0% {
+    left: -5vw;
+    bottom: 78%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 61%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 35%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 49%;
   }
   100% {
     left: 100vw;
@@ -261,267 +468,727 @@
   }
 }
 
-@-webkit-keyframes duck_fly-4 {
-  0% {
-    left: -5vw;
-    bottom: 16%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 8%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 87%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 87%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 25%;
-  }
-}
-
-@keyframes duck_fly-4 {
-  0% {
-    left: -5vw;
-    bottom: 16%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 8%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 87%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 87%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 25%;
-  }
-}
-
-@-webkit-keyframes duck_fly-5 {
-  0% {
-    left: -5vw;
-    bottom: 61%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 43%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 20%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 14%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 81%;
-  }
-}
-
-@keyframes duck_fly-5 {
-  0% {
-    left: -5vw;
-    bottom: 61%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 43%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 20%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 14%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 81%;
-  }
-}
-
-@-webkit-keyframes duck_fly-6 {
-  0% {
-    left: -5vw;
-    bottom: 2%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 19%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 75%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 47%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 26%;
-  }
-}
-
-@keyframes duck_fly-6 {
-  0% {
-    left: -5vw;
-    bottom: 2%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 19%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 75%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 47%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 26%;
-  }
-}
-
-@-webkit-keyframes duck_fly-7 {
-  0% {
-    left: -5vw;
-    bottom: 68%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 33%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 8%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 23%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 84%;
-  }
-}
-
-@keyframes duck_fly-7 {
-  0% {
-    left: -5vw;
-    bottom: 68%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 33%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 8%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 23%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 84%;
-  }
-}
-
-@-webkit-keyframes duck_fly-8 {
-  0% {
-    left: -5vw;
-    bottom: 59%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 34%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 85%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 38%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 37%;
-  }
-}
-
 @keyframes duck_fly-8 {
   0% {
     left: -5vw;
-    bottom: 59%;
+    bottom: 78%;
   }
   25% {
     left: 25vw;
-    bottom: 34%;
+    bottom: 61%;
   }
   50% {
     left: 50vw;
-    bottom: 85%;
+    bottom: 35%;
   }
   75% {
     left: 75vw;
-    bottom: 38%;
+    bottom: 49%;
   }
   100% {
     left: 100vw;
-    bottom: 37%;
+    bottom: 22%;
   }
 }
 
 @-webkit-keyframes duck_fly-9 {
   0% {
     left: -5vw;
-    bottom: 7%;
+    bottom: 2%;
   }
   25% {
     left: 25vw;
-    bottom: 81%;
+    bottom: 7%;
   }
   50% {
     left: 50vw;
-    bottom: 84%;
+    bottom: 88%;
   }
   75% {
     left: 75vw;
-    bottom: 37%;
+    bottom: 76%;
   }
   100% {
     left: 100vw;
-    bottom: 3%;
+    bottom: 56%;
   }
 }
 
 @keyframes duck_fly-9 {
   0% {
     left: -5vw;
+    bottom: 2%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 7%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 88%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 76%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 56%;
+  }
+}
+
+@-webkit-keyframes duck_fly-10 {
+  0% {
+    left: -5vw;
+    bottom: 72%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 85%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 13%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 21%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 38%;
+  }
+}
+
+@keyframes duck_fly-10 {
+  0% {
+    left: -5vw;
+    bottom: 72%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 85%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 13%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 21%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 38%;
+  }
+}
+
+@-webkit-keyframes duck_fly-11 {
+  0% {
+    left: -5vw;
+    bottom: 64%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 89%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 76%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 78%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 50%;
+  }
+}
+
+@keyframes duck_fly-11 {
+  0% {
+    left: -5vw;
+    bottom: 64%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 89%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 76%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 78%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 50%;
+  }
+}
+
+@-webkit-keyframes duck_fly-12 {
+  0% {
+    left: -5vw;
+    bottom: 58%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 25%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 34%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 29%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 32%;
+  }
+}
+
+@keyframes duck_fly-12 {
+  0% {
+    left: -5vw;
+    bottom: 58%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 25%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 34%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 29%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 32%;
+  }
+}
+
+@-webkit-keyframes duck_fly-13 {
+  0% {
+    left: -5vw;
+    bottom: 46%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 14%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 44%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 26%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 22%;
+  }
+}
+
+@keyframes duck_fly-13 {
+  0% {
+    left: -5vw;
+    bottom: 46%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 14%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 44%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 26%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 22%;
+  }
+}
+
+@-webkit-keyframes duck_fly-14 {
+  0% {
+    left: -5vw;
+    bottom: 78%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 45%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 5%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 22%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 47%;
+  }
+}
+
+@keyframes duck_fly-14 {
+  0% {
+    left: -5vw;
+    bottom: 78%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 45%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 5%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 22%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 47%;
+  }
+}
+
+@-webkit-keyframes duck_fly-15 {
+  0% {
+    left: -5vw;
+    bottom: 12%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 23%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 74%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 14%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 21%;
+  }
+}
+
+@keyframes duck_fly-15 {
+  0% {
+    left: -5vw;
+    bottom: 12%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 23%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 74%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 14%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 21%;
+  }
+}
+
+@-webkit-keyframes duck_fly-16 {
+  0% {
+    left: -5vw;
+    bottom: 58%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 18%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 30%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 81%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 52%;
+  }
+}
+
+@keyframes duck_fly-16 {
+  0% {
+    left: -5vw;
+    bottom: 58%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 18%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 30%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 81%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 52%;
+  }
+}
+
+@-webkit-keyframes duck_fly-17 {
+  0% {
+    left: -5vw;
+    bottom: 8%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 22%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 69%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 2%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 58%;
+  }
+}
+
+@keyframes duck_fly-17 {
+  0% {
+    left: -5vw;
+    bottom: 8%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 22%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 69%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 2%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 58%;
+  }
+}
+
+@-webkit-keyframes duck_fly-18 {
+  0% {
+    left: -5vw;
+    bottom: 33%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 76%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 38%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 15%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 88%;
+  }
+}
+
+@keyframes duck_fly-18 {
+  0% {
+    left: -5vw;
+    bottom: 33%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 76%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 38%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 15%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 88%;
+  }
+}
+
+@-webkit-keyframes duck_fly-19 {
+  0% {
+    left: -5vw;
+    bottom: 63%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 68%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 25%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 55%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 5%;
+  }
+}
+
+@keyframes duck_fly-19 {
+  0% {
+    left: -5vw;
+    bottom: 63%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 68%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 25%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 55%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 5%;
+  }
+}
+
+@-webkit-keyframes duck_fly-20 {
+  0% {
+    left: -5vw;
+    bottom: 10%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 38%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 52%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 39%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 46%;
+  }
+}
+
+@keyframes duck_fly-20 {
+  0% {
+    left: -5vw;
+    bottom: 10%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 38%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 52%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 39%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 46%;
+  }
+}
+
+@-webkit-keyframes duck_fly-21 {
+  0% {
+    left: -5vw;
+    bottom: 49%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 65%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 34%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 87%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 63%;
+  }
+}
+
+@keyframes duck_fly-21 {
+  0% {
+    left: -5vw;
+    bottom: 49%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 65%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 34%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 87%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 63%;
+  }
+}
+
+@-webkit-keyframes duck_fly-22 {
+  0% {
+    left: -5vw;
     bottom: 7%;
   }
   25% {
     left: 25vw;
+    bottom: 14%;
+  }
+  50% {
+    left: 50vw;
     bottom: 81%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 55%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 23%;
+  }
+}
+
+@keyframes duck_fly-22 {
+  0% {
+    left: -5vw;
+    bottom: 7%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 14%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 81%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 55%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 23%;
+  }
+}
+
+@-webkit-keyframes duck_fly-23 {
+  0% {
+    left: -5vw;
+    bottom: 37%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 45%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 18%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 16%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 16%;
+  }
+}
+
+@keyframes duck_fly-23 {
+  0% {
+    left: -5vw;
+    bottom: 37%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 45%;
+  }
+  50% {
+    left: 50vw;
+    bottom: 18%;
+  }
+  75% {
+    left: 75vw;
+    bottom: 16%;
+  }
+  100% {
+    left: 100vw;
+    bottom: 16%;
+  }
+}
+
+@-webkit-keyframes duck_fly-24 {
+  0% {
+    left: -5vw;
+    bottom: 36%;
+  }
+  25% {
+    left: 25vw;
+    bottom: 52%;
   }
   50% {
     left: 50vw;
@@ -533,743 +1200,76 @@
   }
   100% {
     left: 100vw;
-    bottom: 3%;
-  }
-}
-
-@-webkit-keyframes duck_fly-10 {
-  0% {
-    left: -5vw;
-    bottom: 21%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 49%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 40%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 29%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 3%;
-  }
-}
-
-@keyframes duck_fly-10 {
-  0% {
-    left: -5vw;
-    bottom: 21%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 49%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 40%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 29%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 3%;
-  }
-}
-
-@-webkit-keyframes duck_fly-11 {
-  0% {
-    left: -5vw;
-    bottom: 70%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 85%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 30%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 75%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 62%;
-  }
-}
-
-@keyframes duck_fly-11 {
-  0% {
-    left: -5vw;
-    bottom: 70%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 85%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 30%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 75%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 62%;
-  }
-}
-
-@-webkit-keyframes duck_fly-12 {
-  0% {
-    left: -5vw;
-    bottom: 33%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 7%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 40%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 65%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 10%;
-  }
-}
-
-@keyframes duck_fly-12 {
-  0% {
-    left: -5vw;
-    bottom: 33%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 7%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 40%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 65%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 10%;
-  }
-}
-
-@-webkit-keyframes duck_fly-13 {
-  0% {
-    left: -5vw;
-    bottom: 4%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 89%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 83%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 68%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 1%;
-  }
-}
-
-@keyframes duck_fly-13 {
-  0% {
-    left: -5vw;
-    bottom: 4%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 89%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 83%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 68%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 1%;
-  }
-}
-
-@-webkit-keyframes duck_fly-14 {
-  0% {
-    left: -5vw;
-    bottom: 71%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 90%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 82%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 21%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 1%;
-  }
-}
-
-@keyframes duck_fly-14 {
-  0% {
-    left: -5vw;
-    bottom: 71%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 90%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 82%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 21%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 1%;
-  }
-}
-
-@-webkit-keyframes duck_fly-15 {
-  0% {
-    left: -5vw;
-    bottom: 77%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 67%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 81%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 31%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 60%;
-  }
-}
-
-@keyframes duck_fly-15 {
-  0% {
-    left: -5vw;
-    bottom: 77%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 67%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 81%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 31%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 60%;
-  }
-}
-
-@-webkit-keyframes duck_fly-16 {
-  0% {
-    left: -5vw;
-    bottom: 11%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 56%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 2%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 38%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 13%;
-  }
-}
-
-@keyframes duck_fly-16 {
-  0% {
-    left: -5vw;
-    bottom: 11%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 56%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 2%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 38%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 13%;
-  }
-}
-
-@-webkit-keyframes duck_fly-17 {
-  0% {
-    left: -5vw;
-    bottom: 43%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 49%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 69%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 52%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 24%;
-  }
-}
-
-@keyframes duck_fly-17 {
-  0% {
-    left: -5vw;
-    bottom: 43%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 49%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 69%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 52%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 24%;
-  }
-}
-
-@-webkit-keyframes duck_fly-18 {
-  0% {
-    left: -5vw;
-    bottom: 66%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 14%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 67%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 12%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 19%;
-  }
-}
-
-@keyframes duck_fly-18 {
-  0% {
-    left: -5vw;
-    bottom: 66%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 14%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 67%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 12%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 19%;
-  }
-}
-
-@-webkit-keyframes duck_fly-19 {
-  0% {
-    left: -5vw;
-    bottom: 15%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 35%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 47%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 80%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 75%;
-  }
-}
-
-@keyframes duck_fly-19 {
-  0% {
-    left: -5vw;
-    bottom: 15%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 35%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 47%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 80%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 75%;
-  }
-}
-
-@-webkit-keyframes duck_fly-20 {
-  0% {
-    left: -5vw;
-    bottom: 21%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 56%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 42%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 10%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 23%;
-  }
-}
-
-@keyframes duck_fly-20 {
-  0% {
-    left: -5vw;
-    bottom: 21%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 56%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 42%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 10%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 23%;
-  }
-}
-
-@-webkit-keyframes duck_fly-21 {
-  0% {
-    left: -5vw;
-    bottom: 54%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 79%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 35%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 14%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 9%;
-  }
-}
-
-@keyframes duck_fly-21 {
-  0% {
-    left: -5vw;
-    bottom: 54%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 79%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 35%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 14%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 9%;
-  }
-}
-
-@-webkit-keyframes duck_fly-22 {
-  0% {
-    left: -5vw;
-    bottom: 54%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 41%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 71%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 17%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 70%;
-  }
-}
-
-@keyframes duck_fly-22 {
-  0% {
-    left: -5vw;
-    bottom: 54%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 41%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 71%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 17%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 70%;
-  }
-}
-
-@-webkit-keyframes duck_fly-23 {
-  0% {
-    left: -5vw;
-    bottom: 8%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 4%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 50%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 82%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 9%;
-  }
-}
-
-@keyframes duck_fly-23 {
-  0% {
-    left: -5vw;
-    bottom: 8%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 4%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 50%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 82%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 9%;
-  }
-}
-
-@-webkit-keyframes duck_fly-24 {
-  0% {
-    left: -5vw;
-    bottom: 88%;
-  }
-  25% {
-    left: 25vw;
-    bottom: 58%;
-  }
-  50% {
-    left: 50vw;
-    bottom: 60%;
-  }
-  75% {
-    left: 75vw;
-    bottom: 69%;
-  }
-  100% {
-    left: 100vw;
-    bottom: 23%;
+    bottom: 34%;
   }
 }
 
 @keyframes duck_fly-24 {
   0% {
     left: -5vw;
-    bottom: 88%;
+    bottom: 36%;
   }
   25% {
     left: 25vw;
-    bottom: 58%;
+    bottom: 52%;
   }
   50% {
     left: 50vw;
-    bottom: 60%;
+    bottom: 84%;
   }
   75% {
     left: 75vw;
-    bottom: 69%;
+    bottom: 37%;
   }
   100% {
     left: 100vw;
-    bottom: 23%;
+    bottom: 34%;
   }
 }
 
 @-webkit-keyframes duck_fly-25 {
   0% {
     left: -5vw;
-    bottom: 13%;
+    bottom: 25%;
   }
   25% {
     left: 25vw;
-    bottom: 17%;
+    bottom: 27%;
   }
   50% {
     left: 50vw;
-    bottom: 84%;
+    bottom: 2%;
   }
   75% {
     left: 75vw;
-    bottom: 16%;
+    bottom: 32%;
   }
   100% {
     left: 100vw;
-    bottom: 59%;
+    bottom: 27%;
   }
 }
 
 @keyframes duck_fly-25 {
   0% {
     left: -5vw;
-    bottom: 13%;
+    bottom: 25%;
   }
   25% {
     left: 25vw;
-    bottom: 17%;
+    bottom: 27%;
   }
   50% {
     left: 50vw;
-    bottom: 84%;
+    bottom: 2%;
   }
   75% {
     left: 75vw;
-    bottom: 16%;
+    bottom: 32%;
   }
   100% {
     left: 100vw;
-    bottom: 59%;
+    bottom: 27%;
   }
 }
 
@@ -1302,8 +1302,8 @@ div {
   top: 40vh;
   right: 0;
   left: 0;
-  -webkit-animation: turn_into_a_point 0.01s linear 8s 1 normal forwards;
-          animation: turn_into_a_point 0.01s linear 8s 1 normal forwards;
+  -webkit-animation: turn_into_a_point 0.01s linear 5s 1 normal forwards;
+          animation: turn_into_a_point 0.01s linear 5s 1 normal forwards;
   -webkit-transform-origin: left top;
           transform-origin: left top;
 }
@@ -1311,11 +1311,11 @@ div {
 .play_field__position__title {
   text-align: center;
   white-space: nowrap;
-  font-size: 10vh;
-  line-height: 12vh;
+  font-size: 250px;
+  line-height: 300px;
   color: #ffffff;
-  -webkit-animation: letter_spacing_level 8s ease-in 1 0s normal forwards;
-          animation: letter_spacing_level 8s ease-in 1 0s normal forwards;
+  -webkit-animation: letter_spacing_level 5s ease-in 1 0s normal forwards;
+          animation: letter_spacing_level 5s ease-in 1 0s normal forwards;
   -webkit-transform-origin: center center;
           transform-origin: center center;
   font-family: "KoHo", "Oswald", sans-serif;
@@ -1350,138 +1350,141 @@ div {
 }
 
 .play_field__sky__duck__label-1 {
-  animation: duck_fly-1 7s linear 15s 1 reverse both;
+  animation: duck_fly-1 7s linear 16s 1 reverse both;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-2 {
-  animation: duck_fly-2 5s linear 14s 1 reverse both;
+  animation: duck_fly-2 7s linear 16s 1 reverse both;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-3 {
-  animation: duck_fly-3 4s linear 19s 1 reverse both;
+  animation: duck_fly-3 7s linear 13s 1 reverse both;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-4 {
-  animation: duck_fly-4 3s linear 22s 1 reverse both;
+  animation: duck_fly-4 6s linear 24s 1 reverse both;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-5 {
-  animation: duck_fly-5 4s linear 30s 1 reverse both;
+  animation: duck_fly-5 8s linear 20s 1 reverse both;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-6 {
-  -webkit-animation: duck_fly-6 4s linear 24s 1 normal both;
-          animation: duck_fly-6 4s linear 24s 1 normal both;
+  -webkit-animation: duck_fly-6 5s linear 29s 1 normal both;
+          animation: duck_fly-6 5s linear 29s 1 normal both;
 }
 
 .play_field__sky__duck__label-7 {
-  -webkit-animation: duck_fly-7 4s linear 32s 1 normal both;
-          animation: duck_fly-7 4s linear 32s 1 normal both;
+  -webkit-animation: duck_fly-7 5s linear 29s 1 normal both;
+          animation: duck_fly-7 5s linear 29s 1 normal both;
 }
 
 .play_field__sky__duck__label-8 {
-  -webkit-animation: duck_fly-8 5s linear 34s 1 normal both;
-          animation: duck_fly-8 5s linear 34s 1 normal both;
+  -webkit-animation: duck_fly-8 5s linear 18s 1 normal both;
+          animation: duck_fly-8 5s linear 18s 1 normal both;
 }
 
 .play_field__sky__duck__label-9 {
-  -webkit-animation: duck_fly-9 6s linear 30s 1 normal both;
-          animation: duck_fly-9 6s linear 30s 1 normal both;
+  -webkit-animation: duck_fly-9 8s linear 24s 1 normal both;
+          animation: duck_fly-9 8s linear 24s 1 normal both;
 }
 
 .play_field__sky__duck__label-10 {
-  -webkit-animation: duck_fly-10 4s linear 29s 1 normal both;
-          animation: duck_fly-10 4s linear 29s 1 normal both;
+  -webkit-animation: duck_fly-10 8s linear 25s 1 normal both;
+          animation: duck_fly-10 8s linear 25s 1 normal both;
 }
 
 .play_field__sky__duck__label-11 {
-  animation: duck_fly-11 3s linear 40s 1 reverse both;
+  animation: duck_fly-11 7s linear 27s 1 reverse both;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-12 {
-  animation: duck_fly-12 3s linear 39s 1 reverse both;
+  animation: duck_fly-12 4s linear 37s 1 reverse both;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-13 {
-  animation: duck_fly-13 3s linear 44s 1 reverse both;
+  animation: duck_fly-13 5s linear 29s 1 reverse both;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-14 {
-  animation: duck_fly-14 4s linear 41s 1 reverse both;
+  animation: duck_fly-14 8s linear 44s 1 reverse both;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-15 {
-  animation: duck_fly-15 3s linear 35s 1 reverse both;
+  animation: duck_fly-15 7s linear 41s 1 reverse both;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-16 {
-  -webkit-animation: duck_fly-16 6s linear 51s 1 normal both;
-          animation: duck_fly-16 6s linear 51s 1 normal both;
+  -webkit-animation: duck_fly-16 6s linear 42s 1 normal both;
+          animation: duck_fly-16 6s linear 42s 1 normal both;
 }
 
 .play_field__sky__duck__label-17 {
-  -webkit-animation: duck_fly-17 5s linear 52s 1 normal both;
-          animation: duck_fly-17 5s linear 52s 1 normal both;
+  -webkit-animation: duck_fly-17 4s linear 44s 1 normal both;
+          animation: duck_fly-17 4s linear 44s 1 normal both;
 }
 
 .play_field__sky__duck__label-18 {
-  -webkit-animation: duck_fly-18 3s linear 54s 1 normal both;
-          animation: duck_fly-18 3s linear 54s 1 normal both;
+  -webkit-animation: duck_fly-18 4s linear 40s 1 normal both;
+          animation: duck_fly-18 4s linear 40s 1 normal both;
 }
 
 .play_field__sky__duck__label-19 {
-  -webkit-animation: duck_fly-19 5s linear 49s 1 normal both;
-          animation: duck_fly-19 5s linear 49s 1 normal both;
+  -webkit-animation: duck_fly-19 5s linear 47s 1 normal both;
+          animation: duck_fly-19 5s linear 47s 1 normal both;
 }
 
 .play_field__sky__duck__label-20 {
-  -webkit-animation: duck_fly-20 4s linear 55s 1 normal both;
-          animation: duck_fly-20 4s linear 55s 1 normal both;
+  -webkit-animation: duck_fly-20 6s linear 56s 1 normal both;
+          animation: duck_fly-20 6s linear 56s 1 normal both;
 }
 
 .play_field__sky__duck__label-21 {
-  -webkit-animation: duck_fly-21 6s linear 60s 1 normal both;
-          animation: duck_fly-21 6s linear 60s 1 normal both;
+  animation: duck_fly-21 6s linear 57s 1 reverse both;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-22 {
-  -webkit-animation: duck_fly-22 7s linear 53s 1 normal both;
-          animation: duck_fly-22 7s linear 53s 1 normal both;
+  -webkit-animation: duck_fly-22 8s linear 55s 1 normal both;
+          animation: duck_fly-22 8s linear 55s 1 normal both;
 }
 
 .play_field__sky__duck__label-23 {
-  -webkit-animation: duck_fly-23 6s linear 55s 1 normal both;
-          animation: duck_fly-23 6s linear 55s 1 normal both;
+  animation: duck_fly-23 7s linear 53s 1 reverse both;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label-24 {
-  -webkit-animation: duck_fly-24 7s linear 60s 1 normal both;
-          animation: duck_fly-24 7s linear 60s 1 normal both;
+  -webkit-animation: duck_fly-24 8s linear 53s 1 normal both;
+          animation: duck_fly-24 8s linear 53s 1 normal both;
 }
 
 .play_field__sky__duck__label-25 {
-  -webkit-animation: duck_fly-25 3s linear 64s 1 normal both;
-          animation: duck_fly-25 3s linear 64s 1 normal both;
+  animation: duck_fly-25 6s linear 58s 1 reverse both;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .play_field__sky__duck__label__img {
@@ -1523,8 +1526,8 @@ div {
 .play_field__land__btn_box__button {
   color: blue;
   background: #00ffff47;
-  font-size: 4vh;
-  line-height: 5vh;
+  font-size: 100px;
+  line-height: 125px;
   padding: 1vh 2vw;
   margin-top: 2vh;
   margin-left: 2vw;
@@ -1551,8 +1554,8 @@ div {
 
 .play_field__land__count {
   text-align: right;
-  font-size: 9vh;
-  line-height: 10vh;
+  font-size: 225px;
+  line-height: 250px;
   color: #ffffff;
   font-family: "Merriweather", sans-serif;
   font-weight: 300;
@@ -1560,8 +1563,8 @@ div {
 
 .play_field__land__count::after {
   content: counter(duck_count) "/25";
-  font-size: 9vh;
-  line-height: 10vh;
+  font-size: 225px;
+  line-height: 250px;
   margin-right: 2vw;
   margin-left: 0.5vw;
   color: #ffffff;
@@ -1569,7 +1572,26 @@ div {
   font-weight: 300;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 4620px) and (max-height: 2500px) {
+  .play_field__position__title {
+    font-size: 10vh;
+    line-height: 12vh;
+  }
+  .play_field__land__btn_box__button {
+    font-size: 4vh;
+    line-height: 5vh;
+  }
+  .play_field__land__count {
+    font-size: 9vh;
+    line-height: 10vh;
+  }
+  .play_field__land__count::after {
+    font-size: 9vh;
+    line-height: 10vh;
+  }
+}
+
+@media (max-width: 3750px) and (max-height: 2500px) {
   .play_field__land__btn_box__button {
     margin-top: 1vh;
   }
@@ -1583,7 +1605,7 @@ div {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 3200px) and (max-height: 2500px) {
   .play_field__position__title {
     font-size: 6vh;
     line-height: 7vh;
@@ -1603,7 +1625,7 @@ div {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 2250px) and (max-height: 2500px) {
   .play_field__position__title {
     font-size: 4vh;
     line-height: 5vh;
@@ -1623,7 +1645,7 @@ div {
   }
 }
 
-@media (max-width: 250px) {
+@media (max-width: 1500px) and (max-height: 2500px) {
   .play_field__land {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1647,7 +1669,7 @@ div {
   }
 }
 
-@media (max-width: 150px) {
+@media (max-width: 1000px) and (max-height: 2500px) {
   .play_field__land__btn_box__button {
     font-size: 1vh;
     line-height: 1vh;
@@ -1662,7 +1684,7 @@ div {
   }
 }
 
-@media (max-width: 65px) {
+@media (max-width: 700px) and (max-height: 2500px) {
   .play_field__position__title {
     font-size: 2vh;
     line-height: 2vh;

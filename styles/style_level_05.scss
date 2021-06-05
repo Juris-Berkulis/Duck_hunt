@@ -1,3 +1,4 @@
+$screen_reference_height: 2500;
 $initial_duration: 5;
 $initial_delay: 0;
 $sky_height: 86vh;
@@ -12,71 +13,92 @@ $button_shift: 1vh;
 $total_ducks: "/25";
 
 @mixin title_font {
+  font-size: $screen_reference_height * 0.1 * 1px;
+  line-height: $screen_reference_height * 0.12 * 1px;
+}
+
+@mixin title_font_4620 {
   font-size: 10vh;
   line-height: 12vh;
 }
 
-@mixin title_font_600 {
+@mixin title_font_3200 {
   font-size: 6vh;
   line-height: 7vh;
 }
 
-@mixin title_font_400 {
+@mixin title_font_2250 {
   font-size: 4vh;
   line-height: 5vh;
 }
 
-@mixin title_font_65 {
+@mixin title_font_700 {
   font-size: 2vh;
   line-height: 2vh;
 }
 
-@mixin button_font($fs: 4vh, $lh: 5vh) {
+@mixin button_font(
+  $fs: $screen_reference_height * 0.04 * 1px,
+  $lh: $screen_reference_height * 0.05 * 1px
+) {
   font-size: $fs;
   line-height: $lh;
 }
 
-@mixin button_font_600($fs: 3vh, $lh: 4vh) {
+@mixin button_font_4620($fs: 4vh, $lh: 5vh) {
   font-size: $fs;
   line-height: $lh;
 }
 
-@mixin button_font_400($fs: 2vh, $lh: 3vh) {
+@mixin button_font_3200($fs: 3vh, $lh: 4vh) {
   font-size: $fs;
   line-height: $lh;
 }
 
-@mixin button_font_150($fs: 1vh, $lh: 1vh) {
+@mixin button_font_2250($fs: 2vh, $lh: 3vh) {
   font-size: $fs;
   line-height: $lh;
 }
 
-@mixin count_font($fs: 9vh, $lh: 10vh) {
+@mixin button_font_1000($fs: 1vh, $lh: 1vh) {
   font-size: $fs;
   line-height: $lh;
 }
 
-@mixin count_font_750($fs: 7vh, $lh: 8vh) {
+@mixin count_font(
+  $fs: $screen_reference_height * 0.09 * 1px,
+  $lh: $screen_reference_height * 0.1 * 1px
+) {
   font-size: $fs;
   line-height: $lh;
 }
 
-@mixin count_font_600($fs: 5vh, $lh: 6vh) {
+@mixin count_font_4620($fs: 9vh, $lh: 10vh) {
   font-size: $fs;
   line-height: $lh;
 }
 
-@mixin count_font_400($fs: 3vh, $lh: 4vh) {
+@mixin count_font_3750($fs: 7vh, $lh: 8vh) {
   font-size: $fs;
   line-height: $lh;
 }
 
-@mixin count_font_150($fs: 2vh, $lh: 2vh) {
+@mixin count_font_3200($fs: 5vh, $lh: 6vh) {
   font-size: $fs;
   line-height: $lh;
 }
 
-@mixin count_font_65($fs: 1vh, $lh: 1vh) {
+@mixin count_font_2250($fs: 3vh, $lh: 4vh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin count_font_1000($fs: 2vh, $lh: 2vh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin count_font_700($fs: 1vh, $lh: 1vh) {
   font-size: $fs;
   line-height: $lh;
 }
@@ -1399,59 +1421,77 @@ div {
   font-weight: 300;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 4620px) and (max-height: $screen_reference_height * 1px) {
+  .play_field__position__title {
+    @include title_font_4620;
+  }
+
+  .play_field__land__btn_box__button {
+    @include button_font_4620;
+  }
+
+  .play_field__land__count {
+    @include count_font_4620;
+  }
+
+  .play_field__land__count::after {
+    @include count_font_4620;
+  }
+}
+
+@media (max-width: 3750px) and (max-height: $screen_reference_height * 1px) {
   .play_field__land__btn_box__button {
     margin-top: 1vh;
   }
 
   .play_field__land__count {
-    @include count_font_750;
+    @include count_font_3750;
   }
 
   .play_field__land__count::after {
-    @include count_font_750;
+    @include count_font_3750;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 3200px) and (max-height: $screen_reference_height * 1px) {
   .play_field__position__title {
-    @include title_font_600;
+    @include title_font_3200;
   }
 
   .play_field__land__btn_box__button {
     margin-top: 1vh;
-    @include button_font_600;
+    @include button_font_3200;
   }
 
   .play_field__land__count {
-    @include count_font_600;
+    @include count_font_3200;
   }
 
   .play_field__land__count::after {
-    @include count_font_600;
+    @include count_font_3200;
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 2250px) and (max-height: $screen_reference_height * 1px) {
   .play_field__position__title {
-    @include title_font_400;
+    @include title_font_2250;
   }
 
   .play_field__land__btn_box__button {
     margin-top: 0;
-    @include button_font_400;
+    @include button_font_2250;
   }
 
   .play_field__land__count {
-    @include count_font_400;
+    @include count_font_2250;
   }
 
   .play_field__land__count::after {
-    @include count_font_400;
+    @include count_font_2250;
   }
 }
 
-@media (max-width: 250px) {
+@media (max-width: 1500px) and (max-height: $screen_reference_height * 1px) {
   .play_field__land {
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -1470,23 +1510,23 @@ div {
   }
 }
 
-@media (max-width: 150px) {
+@media (max-width: 1000px) and (max-height: $screen_reference_height * 1px) {
   .play_field__land__btn_box__button {
-    @include button_font_150;
+    @include button_font_1000;
   }
 
   .play_field__land__count {
-    @include count_font_150;
+    @include count_font_1000;
   }
 
   .play_field__land__count::after {
-    @include count_font_150;
+    @include count_font_1000;
   }
 }
 
-@media (max-width: 65px) {
+@media (max-width: 700px) and (max-height: $screen_reference_height * 1px) {
   .play_field__position__title {
-    @include title_font_65;
+    @include title_font_700;
   }
 
   .play_field__land__btn_box {
@@ -1497,10 +1537,10 @@ div {
   }
 
   .play_field__land__count {
-    @include count_font_65;
+    @include count_font_700;
   }
 
   .play_field__land__count::after {
-    @include count_font_65;
+    @include count_font_700;
   }
 }
