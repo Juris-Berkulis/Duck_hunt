@@ -1192,13 +1192,13 @@ div {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1100px) and (screen) and (orientation: portrait) {
   .play_field__main__menu__level {
     width: 80vw;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (screen) and (orientation: portrait) {
   .play_field__main__menu__level {
     height: 4vh;
     @include link_font_800;
