@@ -1,0 +1,204 @@
+$splash_screen__curtain__btn_start__transition_color__duration: 0.2s;
+$splash_screen__curtain__btn_start__transition_color__delay: 0.1s;
+$animation_curtain_bottom__duration: 0.7s;
+$animation_curtain_bottom__delay: $splash_screen__curtain__btn_start__transition_color__duration +
+  $splash_screen__curtain__btn_start__transition_color__delay;
+$animation_btn_start_manifestation__duration: 1s;
+$animation_btn_start_manifestation__delay: $animation_curtain_bottom__duration +
+  $animation_curtain_bottom__delay + 1s;
+
+@font-face {
+  font-family: "KoHo";
+  src: url("../fonts/KoHo/koho-bold-webfont.woff2") format("woff2"),
+    url("../fonts/KoHo/koho-bold-webfont.woff") format("woff"),
+    url("../fonts/KoHo/KoHo-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather/merriweather-light-webfont.woff2")
+      format("woff2"),
+    url("../fonts/Merriweather/merriweather-light-webfont.woff") format("woff"),
+    url("../fonts/Merriweather/Merriweather-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather/merriweather-regular-webfont.woff2")
+      format("woff2"),
+    url("../fonts/Merriweather/merriweather-regular-webfont.woff")
+      format("woff"),
+    url("../fonts/Merriweather/Merriweather-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/roboto-light-webfont.woff2") format("woff2"),
+    url("../fonts/Roboto/roboto-light-webfont.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/roboto-regular-webfont.woff2") format("woff2"),
+    url("../fonts/Roboto/roboto-regular-webfont.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin options_text_btn_start($fs: 4vh, $lh: 5vh) {
+  color: transparent;
+  background-color: transparent;
+  font-size: $fs;
+  line-height: $lh;
+  padding: 1vh 2vw;
+  border-radius: 2vh;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes animation_curtain_bottom {
+  0% {
+    transform: scaleY(0);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  65% {
+    transform: scaleY(0.7);
+  }
+
+  80% {
+    transform: scaleY(1);
+  }
+
+  90% {
+    transform: scaleY(0.8);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes animation_text_helper_manifestation {
+  0% {
+    color: transparent;
+    background-color: transparent;
+  }
+
+  100% {
+    color: black;
+    background-color: #ffffffaa;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.splash_screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0099ff;
+  background-image: url(../img/Play_field.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash_screen__sticker__title {
+  font-size: 40vh;
+  line-height: 40vh;
+  font-family: "KoHo", "Oswald", sans-serif;
+  font-weight: 500;
+  color: yellow;
+  text-align: center;
+}
+
+.splash_screen__curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000077;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: animation_curtain_bottom $animation_curtain_bottom__duration
+    ease-in $animation_curtain_bottom__delay 1 normal both;
+}
+
+.splash_screen__curtain__container {
+  position: relative;
+}
+
+.splash_screen__curtain__container__btn_start {
+  @include options_text_btn_start;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: color
+      $splash_screen__curtain__btn_start__transition_color__duration linear
+      $splash_screen__curtain__btn_start__transition_color__delay,
+    background-color
+      $splash_screen__curtain__btn_start__transition_color__duration linear
+      $splash_screen__curtain__btn_start__transition_color__delay;
+}
+
+.splash_screen__curtain__container__btn_start:hover {
+  color: black;
+  background-color: yellow;
+}
+
+.splash_screen__curtain__container__text_helper {
+  @include options_text_btn_start;
+  animation: animation_text_helper_manifestation
+    $animation_btn_start_manifestation__duration linear
+    $animation_btn_start_manifestation__delay 1 normal both;
+}
+
+.splash_screen__curtain__container__btn_start:active,
+.splash_screen__curtain__container__btn_start:active
+  ~ .splash_screen__curtain__container__text_helper {
+  transform: translateY(1vh);
+}
+
+@media (orientation: portrait) {
+  .splash_screen__sticker__title {
+    font-size: 40vw;
+    line-height: 40vw;
+  }
+
+  .splash_screen__curtain__container__btn_start,
+  .splash_screen__curtain__container__text_helper {
+    @include options_text_btn_start(4vw, 5vw);
+  }
+}
