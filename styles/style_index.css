@@ -228,4 +228,24 @@
   -webkit-transform: translateY(1vh);
           transform: translateY(1vh);
 }
+
+@media (orientation: portrait) {
+  .splash_screen__sticker__title {
+    font-size: 40vw;
+    line-height: 40vw;
+  }
+  .splash_screen__curtain__container__btn_start,
+  .splash_screen__curtain__container__text_helper {
+    color: transparent;
+    background-color: transparent;
+    font-size: 4vw;
+    line-height: 5vw;
+    padding: 1vh 2vw;
+    border-radius: 2vh;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
 /*# sourceMappingURL=style_index.css.map */
