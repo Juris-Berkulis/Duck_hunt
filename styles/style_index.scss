@@ -125,6 +125,7 @@ $animation_btn_start_manifestation__delay: $animation_curtain_bottom__duration +
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 .splash_screen__sticker__title {

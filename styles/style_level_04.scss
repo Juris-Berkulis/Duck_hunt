@@ -785,6 +785,7 @@ div {
   counter-reset: duck_count;
   cursor: crosshair;
   overflow: hidden;
+  user-select: none;
 }
 
 .play_field__position {
@@ -834,6 +835,7 @@ div {
 
 .play_field__sky__duck__label {
   position: absolute;
+  cursor: move;
 }
 
 .play_field__sky__duck__label-1 {
@@ -1352,6 +1354,7 @@ div {
 .play_field__sky__duck__label__img {
   width: $duck_width;
   height: auto;
+  pointer-events: none;
 }
 
 .play_field__sky__duck__label__img:hover {
